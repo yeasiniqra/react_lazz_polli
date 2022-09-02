@@ -37,6 +37,7 @@ const HeaderNav = () => {
                                 <li>
                                     <NavLink
                                         to="/home"
+                                        onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
                                         Home
@@ -45,6 +46,7 @@ const HeaderNav = () => {
                                 <li>
                                     <NavLink
                                         to="/searchroom"
+                                        onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
                                         Search Room
@@ -53,6 +55,7 @@ const HeaderNav = () => {
                                 <li>
                                     <NavLink
                                         to="/room"
+                                        onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
                                        Rooms
@@ -61,6 +64,7 @@ const HeaderNav = () => {
                                 <li>
                                     <NavLink
                                         to="/contact"
+                                        onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
                                        Contact
@@ -69,6 +73,7 @@ const HeaderNav = () => {
                                 <li>
                                     <NavLink
                                         to="/about"
+                                        onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
                                        About
@@ -80,6 +85,7 @@ const HeaderNav = () => {
                                         <li>
                                             <NavLink
                                                 to="/gallery"
+                                                onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
                                                Gallery
@@ -88,6 +94,7 @@ const HeaderNav = () => {
                                         <li>
                                             <NavLink
                                                 to="/career"
+                                                onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
                                                Career
@@ -96,6 +103,7 @@ const HeaderNav = () => {
                                         <li>
                                             <NavLink
                                                 to="/room"
+                                                onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
                                                Suites
@@ -104,6 +112,7 @@ const HeaderNav = () => {
                                         <li>
                                             <NavLink
                                                 to="/dine"
+                                                onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
                                                Dine
@@ -112,6 +121,7 @@ const HeaderNav = () => {
                                         <li>
                                             <NavLink
                                                 to="/relax"
+                                                onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
                                                Relax
@@ -120,6 +130,7 @@ const HeaderNav = () => {
                                         <li>
                                             <NavLink
                                                 to="/enjoy"
+                                                onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
                                                Enjoy
@@ -164,6 +175,7 @@ const HeaderNav = () => {
                            <ul>
                                  <li>
                                     <NavLink
+                                       onClick={toggleClass}
                                         to="/home"
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
@@ -173,6 +185,7 @@ const HeaderNav = () => {
                                  <li>
                                     <NavLink
                                         to="/searchroom"
+                                        onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
                                        Search Room
@@ -181,6 +194,7 @@ const HeaderNav = () => {
                                  <li>
                                     <NavLink
                                         to="/room"
+                                        onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
                                        Rooms
@@ -189,6 +203,7 @@ const HeaderNav = () => {
                                  <li>
                                     <NavLink
                                         to="/contact"
+                                        onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
                                        Contact
@@ -197,6 +212,7 @@ const HeaderNav = () => {
                                  <li>
                                     <NavLink
                                         to="/about"
+                                        onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
                                        About
@@ -208,6 +224,7 @@ const HeaderNav = () => {
                                         <li>
                                             <NavLink
                                                 to="/gallery"
+                                                onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
                                              Gallery
@@ -216,6 +233,7 @@ const HeaderNav = () => {
                                         <li>
                                             <NavLink
                                                 to="/career"
+                                                onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
                                              Career
@@ -224,6 +242,7 @@ const HeaderNav = () => {
                                         <li>
                                             <NavLink
                                                 to="/room"
+                                                onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
                                              Suites
@@ -232,6 +251,7 @@ const HeaderNav = () => {
                                         <li>
                                             <NavLink
                                                 to="/dine"
+                                                onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
                                              Dine
@@ -240,6 +260,7 @@ const HeaderNav = () => {
                                         <li>
                                             <NavLink
                                                 to="/relax"
+                                                onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
                                              Relax
@@ -248,6 +269,7 @@ const HeaderNav = () => {
                                         <li>
                                             <NavLink
                                                 to="/enjoy"
+                                                onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
                                              Enjoy

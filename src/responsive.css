@@ -37,6 +37,13 @@
         display: inline-block;
         margin-top: 6px;
     }
+    .hide-menu.animi.slideInDown .child-dropdown {
+        margin-top: 0px;
+    }
+    .main-menu > ul > li > ul > li:hover > a {
+        background: transparent;
+        border-radius: inherit !important;
+    }
 
     .main-menu > ul ul {
         position: relative;
@@ -119,6 +126,8 @@
     }
     .main-menu > ul > li > ul > li a {
         color: #fff !important;
+        padding: 0px 12px;
+        font-size: 16px;
     }
     .main-menu > ul > li > ul > li {
         border-bottom: none;

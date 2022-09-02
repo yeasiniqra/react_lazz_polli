@@ -3203,6 +3203,7 @@ select {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 8px;
 }
 
 .about-let,
@@ -3238,6 +3239,7 @@ select {
   background: #e5e5e5;
   padding-right: 0;
   padding-left: 0;
+  border-radius: 8px;
 }
 .about-inner-content .other-page-heading {
   margin-bottom: 15px;
@@ -3693,7 +3695,7 @@ select {
 }
 
 .current-oppertunity-empty-content img {
-  max-width: 200px;
+  max-width: 190px;
   width: 100%;
   margin: 0 auto;
   height: auto;
@@ -3749,4 +3751,8 @@ select {
 .styles-module_close__2I1sI {
   font-weight: 400 !important;
   opacity: 1 !important;
+}
+
+.gallery__Image {
+	cursor: pointer;
 }
