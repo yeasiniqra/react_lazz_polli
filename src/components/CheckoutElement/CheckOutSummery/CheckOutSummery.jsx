@@ -93,7 +93,7 @@ const CheckOutSummery = () => {
                             <small>Amount due at time of check-in </small>
                             <small>BDT 9,100</small>
                         </div>
-                        <Link className="brack-down-2022" to='#'>Price Breakdown / Rate Details</Link>
+                        <Link className="brack-down-2022" to='/searchroom'>Price Breakdown / Rate Details</Link>
                     </div>
                     <div className="total-amount">
                         <span> Pay Now</span>

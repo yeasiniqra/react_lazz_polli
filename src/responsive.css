@@ -1,7 +1,7 @@
 /*========Responsive css========*/
 
-@media all and (min-width:1440px){
-   .slide.custom-splide {
+@media all and (min-width: 1440px) {
+    .slide.custom-splide {
         max-height: 850px;
     }
     .book_table_item > button {
@@ -9,80 +9,78 @@
     }
 }
 
-
-@media all and (max-width:1439px){
-    .container{
+@media all and (max-width: 1439px) {
+    .container {
         max-width: 90%;
     }
-   
 }
 
-@media all and (max-width:1280px){
-	 .book_table_item > button {
+@media all and (max-width: 1280px) {
+    .book_table_item > button {
         padding: 0px 15px;
         font-size: 14px;
     }
 }
 
-@media all and (max-width:991px){
-		.main-menu > ul {
-			flex-direction: column;
-		}
-		.search-mobile {
-			display: none;
-		}
-        .mobile-desk {
-            display: block;
-        }
-		.main-menu > ul .book-now a {
-			margin-left: 15px;
-			display: inline-block;
-			margin-top: 6px;
-		}
+@media all and (max-width: 991px) {
+    .main-menu > ul {
+        flex-direction: column;
+    }
+    .search-mobile {
+        display: none;
+    }
+    .mobile-desk {
+        display: block;
+    }
+    .main-menu > ul .book-now a {
+        margin-left: 15px;
+        display: inline-block;
+        margin-top: 6px;
+    }
 
-		.main-menu > ul ul{
-			position: relative;
-			top: 0;
-			left: 0;
-			background: transparent;
-			padding: 0;
-			padding-left: 25px;
-			-webkit-transition: 0.9s;
-			-o-transition: 0.9s;
-			transition: 0.9s;
-			display: none;
-		}
-		.showSubMenu{
-	        display: block;
-	    }
-	    .main-menu > ul ul.showSubMenu {
-            visibility: visible;
-            opacity: 1;
-            -webkit-transition: 0.9s !important;
-            -o-transition: 0.9s !important;
-            transition: 0.9s !important;
-            display: block;
-        }
+    .main-menu > ul ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        background: transparent;
+        padding: 0;
+        padding-left: 25px;
+        -webkit-transition: 0.9s;
+        -o-transition: 0.9s;
+        transition: 0.9s;
+        display: none;
+    }
+    .showSubMenu {
+        display: block;
+    }
+    .main-menu > ul ul.showSubMenu {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: 0.9s !important;
+        -o-transition: 0.9s !important;
+        transition: 0.9s !important;
+        display: block;
+    }
 
-	   .sidepanel {
-        height: 100%; 
-        width: 45%; 
-        position: fixed; 
-        z-index: 1; 
+    .sidepanel {
+        height: 100%;
+        width: 45%;
+        position: fixed;
+        z-index: 1;
         top: 0;
         left: -100%;
         background-color: #111;
         overflow-x: hidden;
         overflow-y: auto;
-        padding-top: 60px; 
-        -webkit-transition: 0.5s; 
-        -o-transition: 0.5s; 
-        transition: 0.5s; 
-      }
-      .sidepanel.showMenu{
+        padding-top: 60px;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+    }
+    .sidepanel.showMenu {
         left: 0;
-      }
-      .sidepanel a {
+    }
+    .sidepanel a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         color: #fff;
@@ -90,13 +88,11 @@
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s;
-      }
-
+    }
 
     .sidepanel a:hover {
         color: #f1f1f1;
     }
-
 
     .sidepanel .closebtn {
         position: absolute;
@@ -119,8 +115,8 @@
         top: -3px;
     }
     .main-menu-flex {
-		justify-content: space-between;
-	}
+        justify-content: space-between;
+    }
     .main-menu > ul > li > ul > li a {
         color: #fff !important;
     }
@@ -151,17 +147,18 @@
         grid-row-gap: 20px;
     }
     .choose-room-main-grid {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .details-room-main-grid-inner {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     .service-single-item-grid {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 25px;
         margin-top: 35px;
     }
-    .about-let, .about-right {
+    .about-let,
+    .about-right {
         flex: 0 0 100%;
     }
     .about-us-main-grid {
@@ -179,13 +176,9 @@
         font-size: 14px;
         padding: 15px 20px;
     }
-
-
-
-
 }
 
-@media all and (max-width:767px){
+@media all and (max-width: 767px) {
     .relax-spa-img-left {
         flex: 0 0 100%;
         margin-bottom: 15px;
@@ -196,7 +189,7 @@
     .relax-area {
         padding: 30px 0px;
     }
-	.header-top-flex.d-flexx {
+    .header-top-flex.d-flexx {
         display: none;
     }
     .banner-content-overly {
@@ -265,32 +258,10 @@
     .bold-items-single {
         flex: 0 0 70%;
     }
-    
-/*    .bory{
-        box-sizing: border-box;
-        width: 75%;
-        margin: 0 auto;
-        position: static;
-        z-index: 9;
-        overflow: hidden;
-        left: 0px;
-        top: 0px;
-        border: 1px solid #ddd;
-        border-radius: 50%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        align-self: flex-start;
-        pointer-events: none;
-        float: left;  
-    }*/
-
 }
 
-@media all and (max-width:575px){
-	.slide.custom-splide img {
+@media all and (max-width: 575px) {
+    .slide.custom-splide img {
         height: 450px;
         object-fit: cover;
     }
@@ -306,7 +277,7 @@
     .banner-content-overly {
         bottom: 55px;
         left: 10%;
-         max-width: 100%; 
+        max-width: 100%;
     }
     .footer-top-content {
         text-align: center;
@@ -429,14 +400,9 @@
     .restue-inner-items > img {
         height: auto;
     }
-
-        
-
 }
 
-
-
-@media all and (max-width:413px){
+@media all and (max-width: 413px) {
     .main-menu > ul ul {
         padding-left: 0px;
     }
@@ -446,15 +412,6 @@
     .dts-heading-content h1 {
         font-size: 30px;
     }
-  
 }
 
-@media all and (max-width:374px){
-
-}
-
-
-
-
-
-
+@media all and (max-width: 374px) {}

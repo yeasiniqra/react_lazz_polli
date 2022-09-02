@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../../images/logo-white.png';
 import logoBlack from '../../../images/logo-black.png';
 
@@ -34,21 +34,97 @@ const HeaderNav = () => {
                         <div id="mySidepanel" className={`main-menu sidepanel ${isActive && 'showMenu'}`}   >
                             <div  className="mobile-desk closebtn" onClick={toggleClass}>&times;</div>
                             <ul>
-
-                                <li className="active"><Link to="/home">Home</Link></li>
-                                <li><Link to="/searchroom">Search Room</Link></li>
-                                <li><Link to="/room">Rooms</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
-                                <li><Link to="/about">About</Link></li>
+                                <li>
+                                    <NavLink
+                                        to="/home"
+                                        className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                    >
+                                        Home
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink
+                                        to="/searchroom"
+                                        className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                    >
+                                        Search Room
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink
+                                        to="/room"
+                                        className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                    >
+                                       Rooms
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink
+                                        to="/contact"
+                                        className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                    >
+                                       Contact
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink
+                                        to="/about"
+                                        className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                    >
+                                       About
+                                    </NavLink>
+                                </li>
                                 <li className="prent-dropdown">
                                     <Link onClick={toggleClassSub} to="#">Other Page <span className="caret"></span></Link>
                                     <ul className={`child-dropdown ${isActiveSub && 'showSubMenu'}`}>
-                                        <li><Link to="/gallery">Gallery</Link></li>
-                                        <li><Link to="/career">Career</Link></li>
-                                        <li><Link to="/room">Suites</Link></li>
-                                        <li><Link to="/dine">Dine</Link></li>
-                                        <li><Link to="/relax">Relax</Link></li>
-                                        <li><Link to="/enjoy">Enjoy</Link></li>
+                                        <li>
+                                            <NavLink
+                                                to="/gallery"
+                                                className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                            >
+                                               Gallery
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/career"
+                                                className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                            >
+                                               Career
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/room"
+                                                className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                            >
+                                               Suites
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/dine"
+                                                className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                            >
+                                               Dine
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/relax"
+                                                className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                            >
+                                               Relax
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/enjoy"
+                                                className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                            >
+                                               Enjoy
+                                            </NavLink>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li className="search-mobile">
@@ -60,7 +136,7 @@ const HeaderNav = () => {
                                     <span className="closebtn" onClick={toggleClassSearch} title="Close Overlay">×</span>
                                     <div className="overlay-content">
                                         <form action="#">
-                                            <input type="text" placeholder="Search.." name="search" />
+                                            <input type="text" placeholder="Search Here..." name="search" />
                                             <button type="submit"><i className="fa fa-search"></i></button>
                                         </form>
                                     </div>
@@ -86,20 +162,97 @@ const HeaderNav = () => {
                         <div id="mySidepanel2" className={`main-menu sidepanel ${isActive && 'showMenu'}`}>
                            <div  className="mobile-desk closebtn" onClick={toggleClass}>&times;</div>
                            <ul>
-                                <li className="active"><Link to="/home">Home</Link></li>
-                                <li><Link to="/searchroom">Search Room</Link></li>
-                                <li><Link to="/room">Rooms</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
-                                <li><Link to="/about">About</Link></li>
+                                 <li>
+                                    <NavLink
+                                        to="/home"
+                                        className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                    >
+                                        Home
+                                    </NavLink>
+                                </li>
+                                 <li>
+                                    <NavLink
+                                        to="/searchroom"
+                                        className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                    >
+                                       Search Room
+                                    </NavLink>
+                                </li>
+                                 <li>
+                                    <NavLink
+                                        to="/room"
+                                        className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                    >
+                                       Rooms
+                                    </NavLink>
+                                </li>
+                                 <li>
+                                    <NavLink
+                                        to="/contact"
+                                        className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                    >
+                                       Contact
+                                    </NavLink>
+                                </li>
+                                 <li>
+                                    <NavLink
+                                        to="/about"
+                                        className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                    >
+                                       About
+                                    </NavLink>
+                                </li>
                                 <li className="prent-dropdown">
                                     <Link onClick={toggleClassSub} to="#">Other Page <span className="caret"></span></Link>
                                     <ul className={`child-dropdown ${isActiveSub && 'showSubMenu'}`} >
-                                        <li><Link to="/gallery">Gallery</Link></li>
-                                        <li><Link to="/career">Career</Link></li>
-                                        <li><Link to="/room">Suites</Link></li>
-                                        <li><Link to="/dine">Dine</Link></li>
-                                        <li><Link to="/relax">Relax</Link></li>
-                                        <li><Link to="/enjoy">Enjoy</Link></li>
+                                        <li>
+                                            <NavLink
+                                                to="/gallery"
+                                                className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                            >
+                                             Gallery
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/career"
+                                                className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                            >
+                                             Career
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/room"
+                                                className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                            >
+                                             Suites
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/dine"
+                                                className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                            >
+                                             Dine
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/relax"
+                                                className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                            >
+                                             Relax
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/enjoy"
+                                                className={({ isActive }) => (isActive ? "link-active" : "link")}
+                                            >
+                                             Enjoy
+                                            </NavLink>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li className="search-mobile">
@@ -111,7 +264,7 @@ const HeaderNav = () => {
                                 <span className="closebtn" onClick={toggleClassSearch} title="Close Overlay">×</span>
                                     <div className="overlay-content">
                                         <form action="#">
-                                            <input type="text" placeholder="Search.." name="search" />
+                                            <input type="text" placeholder="Search Here..." name="search" />
                                             <button type="submit"><i className="fa fa-search"></i></button>
                                         </form>
                                     </div>
@@ -120,7 +273,6 @@ const HeaderNav = () => {
                             </ul>
                         </div>
                     </div>
-                   
                 </div>
             </div>
         </>

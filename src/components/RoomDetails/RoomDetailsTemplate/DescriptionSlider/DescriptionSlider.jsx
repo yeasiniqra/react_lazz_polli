@@ -1,17 +1,20 @@
-import React, { useEffect } from "react";
+
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import { AsyncGallery } from "../../../../lib/gallery";
 
 import singleOne from "../../../../images/dtl2.jpg";
 import singleTwo from "../../../../images/dtl.jpg";
 import singleThree from "../../../../images/dtl3.jpg";
+import singleFour from '../../../../images/6.png'
+import GalleryPreview from "../../../Sheared/GalleryPreview/GalleryPreview";
+import { useState } from "react";
 
 const DescriptionSlider = ( {room} ) => {
     const singleImages = [
         { image: singleOne },
         { image: singleTwo },
         { image: singleThree },
+        { image: singleFour },
       ];
       const options = {
         rewind: true,
@@ -22,26 +25,35 @@ const DescriptionSlider = ( {room} ) => {
         pauseOnHover: false,
         fixedWidth: "100%",
         fixedHeight: "auto",
+        start  : 0
       };
     
+
+      const [preview, setPreview] = useState({ show: false, images: [], start: 0});
+
+      const previewCloseHandler = () => {
+        setPreview({ show: false, images: [], start: 0});
+        
+      };
     
-      useEffect(() => {
-        const settings = {
-          images: ".gallery__Image",
-          loop: true,
-          next: undefined,
-          prev: undefined,
-          dots: undefined,
-          close: undefined,
-          loader: undefined,
-          counter: undefined,
-          counterDivider: "/",
-          keyboardNavigation: true,
-          hiddenElements: [],
-        };
-        new AsyncGallery(settings);
-      }, []);
+      const checkClickHandler = (index) => {
+        const  images = [
+          { url: singleOne },
+          { url: singleTwo },
+          { url: singleThree },
+          { url: singleFour },
+        ];
+
+        setPreview({
+          show: true,
+          images,
+          start: index
+        });
+      };
+
+
     return (
+      <>
         <div className="dts-left-img">
             <div className="dts_banner_slide">
                 <Splide options={options} aria-label="React Splide Example">
@@ -51,6 +63,7 @@ const DescriptionSlider = ( {room} ) => {
                         className="gallery__Image"
                         src={imagesSlide.image}
                         alt="b1.png"
+                        onClick={checkClickHandler.bind(null, index)}
                         data-large={imagesSlide.image}
                         />
                     </SplideSlide>
@@ -64,6 +77,8 @@ const DescriptionSlider = ( {room} ) => {
                 </h4>
             </div>
       </div>
+      <GalleryPreview start={preview.start} show={preview.show} images={preview.images} onClose={previewCloseHandler} />
+      </>
     );
 };
 

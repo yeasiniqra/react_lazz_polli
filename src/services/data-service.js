@@ -73,7 +73,7 @@ const APP_DATA = {
             subHeading : "The most exotic resort in Bangladeshs",
             btnText : "RESERVE NOW",
             image: bannerOne,
-            link: '/contact',
+            link: '/searchroom',
         },
 
         {
@@ -81,21 +81,21 @@ const APP_DATA = {
             subHeading : "The most exotic resort in Bangladeshs",
             btnText : "RESERVE NOW",
             image: bannerTwo,
-            link: '/about'
+            link: '/searchroom'
         },
         {
             heading : "Lazz Polli Resort",
             subHeading : "The most exotic resort in Bangladeshs",
             btnText : "RESERVE NOW",
             image: bannerThree,
-            link: '/about'
+            link: '/searchroom'
         },
         {
             heading : "Lazz Polli Resort",
             subHeading : "The most exotic resort in Bangladeshs",
             btnText : "RESERVE NOW",
             image: bannerFour,
-            link: '/contact',
+            link: '/searchroom',
         },
 
         {
@@ -103,14 +103,14 @@ const APP_DATA = {
             subHeading : "The most exotic resort in Bangladeshs",
             btnText : "RESERVE NOW",
             image: bannerFive,
-            link: '/about'
+            link: '/searchroom'
         },
         {
             heading : "Lazz Polli Resort",
             subHeading : "The most exotic resort in Bangladeshs",
             btnText : "RESERVE NOW",
             image: bannerSix,
-            link: '/about'
+            link: '/searchroom'
         }
     ],
 
