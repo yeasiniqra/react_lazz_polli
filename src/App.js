@@ -16,6 +16,7 @@ import Enjoy from './pages/Enjoy';
 import Gallery from './pages/Gallery';
 import RoomSearch from './pages/RoomSearch';
 import CheckoutElement from './components/CheckoutElement/CheckoutElement';
+import ErrorPage from './pages/ErrorPage';
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
             <Route path="/gallery" element={ <Gallery />} />
             <Route path="/searchroom" element={ <RoomSearch />} />
             <Route path="/checkout" element={ <CheckoutElement />} />
+            <Route path="/*" element={<ErrorPage />} />
         </Routes>
       <Footer /> 
     </div>

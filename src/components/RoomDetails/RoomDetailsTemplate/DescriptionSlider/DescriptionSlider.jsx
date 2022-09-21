@@ -5,7 +5,7 @@ import "@splidejs/react-splide/css";
 import singleOne from "../../../../images/dtl2.jpg";
 import singleTwo from "../../../../images/dtl.jpg";
 import singleThree from "../../../../images/dtl3.jpg";
-import singleFour from '../../../../images/6.png'
+import singleFour from '../../../../images/6.png';
 import GalleryPreview from "../../../Sheared/GalleryPreview/GalleryPreview";
 import { useState } from "react";
 
@@ -33,7 +33,6 @@ const DescriptionSlider = ( {room} ) => {
 
       const previewCloseHandler = () => {
         setPreview({ show: false, images: [], start: 0});
-        
       };
     
       const checkClickHandler = (index) => {
@@ -43,7 +42,7 @@ const DescriptionSlider = ( {room} ) => {
           { url: singleThree },
           { url: singleFour },
         ];
-
+        
         setPreview({
           show: true,
           images,
@@ -60,11 +59,11 @@ const DescriptionSlider = ( {room} ) => {
                     {singleImages.map((imagesSlide, index) => (
                     <SplideSlide key={index}>
                         <img
-                        className="gallery__Image"
-                        src={imagesSlide.image}
-                        alt="b1.png"
-                        onClick={checkClickHandler.bind(null, index)}
-                        data-large={imagesSlide.image}
+                          className="gallery__Image"
+                          src={imagesSlide.image}
+                          alt="b1.png"
+                          onClick={checkClickHandler.bind(null, index)}
+                          data-large={imagesSlide.image}
                         />
                     </SplideSlide>
                     ))}
@@ -76,7 +75,7 @@ const DescriptionSlider = ( {room} ) => {
                     {room.roomAmount} / <span>{room.dayNight}</span>
                 </h4>
             </div>
-      </div>
+       </div>
       <GalleryPreview start={preview.start} show={preview.show} images={preview.images} onClose={previewCloseHandler} />
       </>
     );

@@ -16,7 +16,7 @@ const Weather = () => {
                 data-suncolor="#fbf41a"
                 data-raincolor="#39adfc"
             >
-                Lazz Polli Resort Hemayetpur, Savar
+                Lazz Polli Resort Hemayetpur, Savar.
             </a>
 
         </section>

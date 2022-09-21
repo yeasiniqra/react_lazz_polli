@@ -9,8 +9,8 @@ const Pools = () => {
            <div id="Tab7" className="tabcontent">
                 <div className="gallery-grid">
                     {
-                        gallery[2].pools.map( (item, index ) => 
-                        <PoolsTemplate item={item} key={index} />
+                        gallery[2].pools.map( (product, index ) => 
+                        <PoolsTemplate product={product} key={index} />
                         )
                     }                 
                 </div>

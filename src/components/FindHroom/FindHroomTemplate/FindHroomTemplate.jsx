@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const FindHroomTemplate = ({FindHroom}) => {
     return (
-        <div>
+      <>
         <section className="booking-room-area">
             <div className="container">
                 <div className="booking-room-main">
@@ -70,7 +70,7 @@ const FindHroomTemplate = ({FindHroom}) => {
                 </div>
             </div>
         </section>
-        </div>
+      </>
     );
 };
 

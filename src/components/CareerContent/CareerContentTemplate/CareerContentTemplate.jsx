@@ -30,7 +30,7 @@ const CareerContentTemplate = () => {
                         </div>
                     </div>
                     <div className="drop-cv-right">
-                        <img src={career} alt="career" />
+                        <img src={career} alt="career Images" />
                     </div>
                 </div>
             </div>

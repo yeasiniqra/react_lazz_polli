@@ -13,7 +13,7 @@ const OppertunityTem = () => {
                 </div>
 
                 <div className="current-oppertunity-empty-content">
-                <img src={currentImg} alt="career" />
+                <img src={currentImg} alt="career Images" />
                 <span>{oppertuniteContent.title}</span>
             </div>
             </div>

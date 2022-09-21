@@ -1,5 +1,4 @@
 import React from "react";
-// import styles from "../alert/Alert.module.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import styles from './Gallery.module.css'
@@ -28,10 +27,10 @@ const GalleryPreview = ({ show, onClose, images = [], start }) => {
                         {images.map((image, index) => (
                         <SplideSlide key={index}>
                             <img
-                            className="gallery__Image"
-                            src={image.url}
-                            alt="b1.png"
-                            data-large={image.url}
+                               className="gallery__Image"
+                               src={image.url}
+                               alt="b1.png"
+                               data-large={image.url}
                             />
                         </SplideSlide>
                         ))}
@@ -43,9 +42,9 @@ const GalleryPreview = ({ show, onClose, images = [], start }) => {
             className={`${styles["modal-close"]} ${styles["modal-exit"]}`}
             onClick={onClose}
           >
-            ×
+          ×
            
-          </button>
+      </button>
     </div>
   );
 };

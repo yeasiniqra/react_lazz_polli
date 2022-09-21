@@ -9,8 +9,8 @@ const Spaa = () => {
            <div id="Tab7" className="tabcontent">
                 <div className="gallery-grid">
                     {
-                        gallery[4].spaa.map( (item, index ) => 
-                        <SpaaTemplate item={item} key={index} />
+                        gallery[4].spaa.map( (product, index ) => 
+                        <SpaaTemplate product={product} key={index} />
                         )
                     }                 
                 </div>

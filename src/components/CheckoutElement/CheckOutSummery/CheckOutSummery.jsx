@@ -2,10 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CheckOutSummery = () => {
+    const title = {
+        title : 'Your booking summary'
+    }
     return (
         <div className="room-search-cart-right">
             <div className="shopping-cart">
-                <h4>Your booking summary</h4>
+                <h4>{title.title}</h4>
                 <div className="summery-main-grid checkout-summery-main-grid">
                     <div className="smy-date">
                         <span> Lazz Polli Resort </span>
@@ -29,10 +32,10 @@ const CheckOutSummery = () => {
                         <div className="header-top-left">
                             <ul className="d-flex al-center">
                                 <li>
-                                    <Link to='#'><i className="fa fa-volume-control-phone" aria-hidden="true"></i><span className="ex-number">+88 01778-772327</span></Link>
+                                    <a href='tel:+88 01778-772327'><i className="fa fa-volume-control-phone" aria-hidden="true"></i><span className="ex-number">+88 01778-772327</span></a>
                                 </li>
                                 <li>
-                                    <Link to='#'><i className="fa fa-envelope-o" aria-hidden="true"></i>info@lazzpolli.com</Link>
+                                    <a href='mailto:info@lazzpolli.com'><i className="fa fa-envelope-o" aria-hidden="true"></i>info@lazzpolli.com</a>
                                 </li>
                             </ul>
                         </div>
@@ -43,7 +46,7 @@ const CheckOutSummery = () => {
                             <small>2022-07-23</small>
                             <h5>1 Night Stay</h5>
                             <div className="common-btn book-search-btn smr-book-search-btn">
-                                <Link to='#'>Change Dates</Link>
+                                <button>Change Dates</button>
                             </div>
                         </div>
                         <div className="check-in-out">
@@ -51,7 +54,7 @@ const CheckOutSummery = () => {
                             <small>2022-07-24</small>
                         </div>
                     </div>
-                    <h4>Rooms & Rates ( Price htmlFor 1 Night )</h4>
+                    <h4 className='roomNight'>Rooms & Rates ( Price For 1 Night )</h4>
                     <div className="super-flex-item">
                         <div className="spk-left">
                             <p><span>Room : </span>Superior King</p>

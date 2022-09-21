@@ -28,9 +28,7 @@ const HeaderNav = () => {
                         <div className="logo">
                             <Link to="/home"><img src={logo} alt="logo" /></Link>
                         </div>
-                      
                         <button className="nav_icon mobile-desk openbtn" onClick={toggleClass}><i className="fa fa-bars"></i></button>
-                        
                         <div id="mySidepanel" className={`main-menu sidepanel ${isActive && 'showMenu'}`}   >
                             <div  className="mobile-desk closebtn" onClick={toggleClass}>&times;</div>
                             <ul>
@@ -40,7 +38,7 @@ const HeaderNav = () => {
                                         onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
-                                        Home
+                                    Home
                                     </NavLink>
                                 </li>
                                 <li>
@@ -49,7 +47,7 @@ const HeaderNav = () => {
                                         onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
-                                        Search Room
+                                    Search Room
                                     </NavLink>
                                 </li>
                                 <li>
@@ -58,7 +56,7 @@ const HeaderNav = () => {
                                         onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
-                                       Rooms
+                                    Rooms
                                     </NavLink>
                                 </li>
                                 <li>
@@ -67,7 +65,7 @@ const HeaderNav = () => {
                                         onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
-                                       Contact
+                                    Contact
                                     </NavLink>
                                 </li>
                                 <li>
@@ -76,7 +74,7 @@ const HeaderNav = () => {
                                         onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
-                                       About
+                                    About
                                     </NavLink>
                                 </li>
                                 <li className="prent-dropdown">
@@ -88,7 +86,7 @@ const HeaderNav = () => {
                                                 onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
-                                               Gallery
+                                            Gallery
                                             </NavLink>
                                         </li>
                                         <li>
@@ -97,7 +95,7 @@ const HeaderNav = () => {
                                                 onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
-                                               Career
+                                            Career
                                             </NavLink>
                                         </li>
                                         <li>
@@ -106,7 +104,7 @@ const HeaderNav = () => {
                                                 onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
-                                               Suites
+                                            Suites
                                             </NavLink>
                                         </li>
                                         <li>
@@ -115,7 +113,7 @@ const HeaderNav = () => {
                                                 onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
-                                               Dine
+                                            Dine
                                             </NavLink>
                                         </li>
                                         <li>
@@ -124,7 +122,7 @@ const HeaderNav = () => {
                                                 onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
-                                               Relax
+                                            Relax
                                             </NavLink>
                                         </li>
                                         <li>
@@ -133,7 +131,7 @@ const HeaderNav = () => {
                                                 onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
-                                               Enjoy
+                                            Enjoy
                                             </NavLink>
                                         </li>
                                     </ul>
@@ -141,7 +139,7 @@ const HeaderNav = () => {
                                 <li className="search-mobile">
                                     <Link to="#"><i className="fa fa-search openBtn" onClick={toggleClassSearch}></i> </Link>
                                 </li>
-                                <li className="book-now"><Link to="/searchroom">Book Now</Link></li>
+                                <li className="book-now"><Link  onClick={toggleClass} to="/searchroom">Book Now</Link></li>
                               
                                 <div id="myOverlay" className={`overlaySearch ${isActiveSearch && 'showMenuSearch'}`}>
                                     <span className="closebtn" onClick={toggleClassSearch} title="Close Overlay">×</span>
@@ -152,24 +150,19 @@ const HeaderNav = () => {
                                         </form>
                                     </div>
                                 </div>
-                               
                             </ul>
                         </div>
                     </div>
-                   
                 </div>
             </div>
 
             <div className="hide-menu animi slideInDown">
                 <div className="container">
-                    
                     <div className="main-menu-flex">
                         <div className="logo">
                             <Link to="/home"><img src={logoBlack} alt="logo" /></Link>
                         </div>
-                        
                         <button className="nav_icon mobile-desk openbtn" onClick={toggleClass}><i className="fa fa-bars"></i></button>
-                       
                         <div id="mySidepanel2" className={`main-menu sidepanel ${isActive && 'showMenu'}`}>
                            <div  className="mobile-desk closebtn" onClick={toggleClass}>&times;</div>
                            <ul>
@@ -179,7 +172,7 @@ const HeaderNav = () => {
                                         to="/home"
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
-                                        Home
+                                    Home
                                     </NavLink>
                                 </li>
                                  <li>
@@ -188,7 +181,7 @@ const HeaderNav = () => {
                                         onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
-                                       Search Room
+                                    Search Room
                                     </NavLink>
                                 </li>
                                  <li>
@@ -197,7 +190,7 @@ const HeaderNav = () => {
                                         onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
-                                       Rooms
+                                    Rooms
                                     </NavLink>
                                 </li>
                                  <li>
@@ -206,7 +199,7 @@ const HeaderNav = () => {
                                         onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
-                                       Contact
+                                    Contact
                                     </NavLink>
                                 </li>
                                  <li>
@@ -215,7 +208,7 @@ const HeaderNav = () => {
                                         onClick={toggleClass}
                                         className={({ isActive }) => (isActive ? "link-active" : "link")}
                                     >
-                                       About
+                                    About
                                     </NavLink>
                                 </li>
                                 <li className="prent-dropdown">
@@ -280,7 +273,7 @@ const HeaderNav = () => {
                                 <li className="search-mobile">
                                    <Link onClick={toggleClassSearch} to="#"><i className="fa fa-search openBtn" ></i> </Link>
                                 </li>
-                                <li className="book-now"><Link to="/searchroom">Book Now</Link></li>
+                                <li className="book-now"><Link  onClick={toggleClass} to="/searchroom">Book Now</Link></li>
                               
                                 <div id="myOverlay" className={`overlaySearch ${isActiveSearch && 'showMenuSearch'}`}>
                                 <span className="closebtn" onClick={toggleClassSearch} title="Close Overlay">×</span>
@@ -291,7 +284,6 @@ const HeaderNav = () => {
                                         </form>
                                     </div>
                                 </div>
-                               
                             </ul>
                         </div>
                     </div>

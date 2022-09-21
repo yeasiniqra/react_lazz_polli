@@ -9,8 +9,8 @@ const Restaurants = () => {
            <div id="Tab7" className="tabcontent">
                 <div className="gallery-grid">
                     {
-                        gallery[3].restaurants.map( (item, index ) => 
-                        <RestaurantTemplate item={item} key={index} />
+                        gallery[3].restaurants.map( (product, index ) => 
+                        <RestaurantTemplate product={product} key={index} />
                         )
                     }                 
                 </div>

@@ -1,10 +1,15 @@
 // banner slider iamges
-import bannerOne from '../images/1.png';
-import bannerTwo from '../images/12.png';
-import bannerThree from '../images/6.png';
-import bannerFour from '../images/13.png';
-import bannerFive from '../images/14.png';
-import bannerSix from '../images/11.png';
+import bannerOne from '../images/slider/1.webp';
+import bannerTwo from '../images/slider/2.webp';
+import bannerThree from '../images/slider/3.webp';
+import bannerFour from '../images/slider/4.webp';
+import bannerFive from '../images/slider/5.webp';
+import bannerSix from '../images/slider/6.webp';
+import bannerSeven from '../images/slider/7.webp';
+import bannerEight from '../images/slider/8.webp';
+import bannerNine from '../images/slider/9.webp';
+import bannerTen from '../images/slider/10.webp';
+
 
 // Find Homme Room iamges
 import findOne from '../images/rooms-thumb.jpg';
@@ -81,8 +86,9 @@ const APP_DATA = {
             subHeading : "The most exotic resort in Bangladeshs",
             btnText : "RESERVE NOW",
             image: bannerTwo,
-            link: '/searchroom'
+            link: '/searchroom',
         },
+
         {
             heading : "Lazz Polli Resort",
             subHeading : "The most exotic resort in Bangladeshs",
@@ -90,12 +96,13 @@ const APP_DATA = {
             image: bannerThree,
             link: '/searchroom'
         },
+
         {
             heading : "Lazz Polli Resort",
             subHeading : "The most exotic resort in Bangladeshs",
             btnText : "RESERVE NOW",
             image: bannerFour,
-            link: '/searchroom',
+            link: '/searchroom'
         },
 
         {
@@ -105,13 +112,47 @@ const APP_DATA = {
             image: bannerFive,
             link: '/searchroom'
         },
+
         {
             heading : "Lazz Polli Resort",
             subHeading : "The most exotic resort in Bangladeshs",
             btnText : "RESERVE NOW",
             image: bannerSix,
             link: '/searchroom'
-        }
+        },
+
+        {
+            heading : "Lazz Polli Resort",
+            subHeading : "The most exotic resort in Bangladeshs",
+            btnText : "RESERVE NOW",
+            image: bannerSeven,
+            link: '/searchroom'
+        },
+
+        {
+            heading : "Lazz Polli Resort",
+            subHeading : "The most exotic resort in Bangladeshs",
+            btnText : "RESERVE NOW",
+            image: bannerEight,
+            link: '/searchroom'
+        },
+
+        {
+            heading : "Lazz Polli Resort",
+            subHeading : "The most exotic resort in Bangladesh",
+            btnText : 'RESERVE NOW',
+            image : bannerNine,
+            link : '/searchroom'
+        },
+
+        {
+            heading : "Lazz Polli Resort",
+            subHeading : "The most exotic resort in Bangladesh",
+            btnText : 'RESERVE NOW',
+            image : bannerTen,
+            link : '/searchroom'
+        },
+
     ],
 
     FindHroom:[
@@ -211,7 +252,7 @@ const APP_DATA = {
                     resortAboutDesc : 'Lazz Polli Resort, one of the best resorts in Bangladesh, which is located at Bhabnipur near Dhaka- Mymensingh highway under Gazipur District. It has very convenient communication with the mega city Dhaka. The resorts has great views and a large area covered by natural landscapes. The artificial presentation and the scenic beauty make this a great place for entertainment and recreation'
                 },
                 {
-                    resortAboutDesc : 'Establish in 2009 with a dream to help people to feel the nature by touching it. This resort is fully covered by the natural landscape. The security is a major component for the guests, which we give the highest priority. At Rajendra Eco Resort & Village, we never compromise with the visitors safety and security. We believe, our valued guests deserve it. Similarly, our well atheistic staffs are always ready to take the liability of our valued guests hospitality.'
+                    resortAboutDesc : 'Establish in 2009 with a dream to help people to feel the nature by touching it. This resort is fully covered by the natural landscape. The security is a major component for the guests, which we give the highest priority. At Lazz Polli Resort, we never compromise with the visitors safety and security. We believe, our valued guests deserve it. Similarly, our well atheistic staffs are always ready to take the liability of our valued guests hospitality.'
                 },
                 {
                     resortAboutDesc : 'Nowadays, people are leading a robotic life due to tight working schedules or modern busy lifestyle. However, this is not the only reason behind this monotonous life. Lack of facilities, excessive cost, long distance, safety and security, these are some other important causes that are impacting on people s living style or traveling.'
@@ -609,7 +650,7 @@ const APP_DATA = {
             adults : '2 Adults , 1 Child, 1 Room',
             btnLink : '#',
             btnText : 'Book Room',
-            overlyBtn : '1 Item Add'
+            overlyBtn : 'Item Add'
         },
         {
             image : searchRoomTwo,
@@ -623,7 +664,7 @@ const APP_DATA = {
             adults : '2 Adults , 1 Child, 1 Room',
             btnLink : '#',
             btnText : 'Book Room',
-            overlyBtn : '1 Item Add'
+            overlyBtn : 'Item Add'
         },
         {
             image : searchRoomThree,
@@ -637,7 +678,7 @@ const APP_DATA = {
             adults : '2 Adults , 1 Child, 1 Room',
             btnLink : '#',
             btnText : 'Book Room',
-            overlyBtn : '1 Item Add'
+            overlyBtn : 'Item Add'
         },
         {
             image : searchRoomFour,
@@ -651,7 +692,7 @@ const APP_DATA = {
             adults : '2 Adults , 1 Child, 1 Room',
             btnLink : '#',
             btnText : 'Book Room',
-            overlyBtn : '1 Item Add'
+            overlyBtn : 'Item Add'
         },
     ]
 

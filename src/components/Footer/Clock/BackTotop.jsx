@@ -22,11 +22,11 @@ const BackTotop = () => {
       
     return (
         <>
-            {showButton && (
-                    <button onClick={scrollToTop} className="toTop" id='toTop'>
-                    
-                    </button>
-                )}
+            {
+            showButton && (
+                <button onClick={scrollToTop} className="toTop" id='toTop'> </button>
+            )
+            }
         </>
     );
 };

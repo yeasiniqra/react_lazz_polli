@@ -7,7 +7,7 @@ const Modal = () => {
         <div className="modal" id="modal-one">
             <div className="modal-bg modal-exit"></div>
             <div className="modal-container">
-                <img src={image} alt="" />
+                <img src={image} alt="modal logos" />
                 <h1>
                     <span>Your submission has been received.</span>
                     <span>Your order number is "0723009"</span>

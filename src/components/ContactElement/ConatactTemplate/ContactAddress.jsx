@@ -1,13 +1,16 @@
 import React from "react";
 
 const ContactAddress = () => {
+  const title = {
+    title : 'Lazz Polli Convention, Hemayetpur Saver'
+  }
   return (
     <>
       <div className="reqest-demo-right">
         <ul>
           <li>
             <i className="fa fa-home" aria-hidden="true"></i>
-            <span>Lazz Polli Convention, Hemayetpur Saver</span>
+            <span>{title.title}</span>
           </li>
           <li>
             <i className="fa fa-volume-control-phone" aria-hidden="true"></i>

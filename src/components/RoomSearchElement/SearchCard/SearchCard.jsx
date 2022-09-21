@@ -3,9 +3,14 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const SearchCard = ({item}) => {
-    const [count, setCout] = useState(0);
-    const inc = () => setCout(count + 1);
-    const dec = () => setCout (count - 1);
+    const [count, setCount] = useState(1);
+    const IncOnClickedHandler = () => setCount(count + 1);
+    const DecOnClickedHandler = () => setCount (count - 1);
+
+    const [isActive, setActive] = useState();
+    const toggleClass = () => {
+        setActive(!isActive)
+    };
 
     return (
         <div className="min-items-inner-single">
@@ -28,13 +33,13 @@ const SearchCard = ({item}) => {
                     </div>
                 </div>
                 <div className="common-btn book-search-btn">
-                    <Link to={item.btnLink}>{item.btnText}</Link>
-                    <div className="add-tocart-overlay">
+                    <button onClick={toggleClass} className='searchBtn'>{item.btnText}</button>
+                    <div className={`add-tocart-overlay ${isActive && 'show'}`}>
                         <div className="inner-card-flex">
                             <div className="qty-holder2">
-                                <span onClick={dec} className="qty-dec-btn2" title="Dec">-</span>
-                                <aside>{item.overlyBtn}</aside>
-                                <span onClick={inc} className="qty-inc-btn2" title="Inc">+</span>
+                                <span onClick={DecOnClickedHandler} className="qty-dec-btn2" title="Dec">-</span>
+                                <aside><small>{count}</small>{item.overlyBtn}</aside>
+                                <span onClick={IncOnClickedHandler} className="qty-inc-btn2" title="Inc">+</span>
                             </div>
                         </div>
                     </div>

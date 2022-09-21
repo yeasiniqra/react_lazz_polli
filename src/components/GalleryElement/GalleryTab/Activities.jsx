@@ -8,8 +8,8 @@ const Activities = () => {
         <div id="Tab7" className="tabcontent">
         <div className="gallery-grid">
             {
-                gallery[1].activities.map( (item, index ) => 
-                <ActivitesTemplate item={item} key={index} />
+                gallery[1].activities.map( (product, index ) => 
+                <ActivitesTemplate product={product} key={index} />
                 )
             }                 
         </div>

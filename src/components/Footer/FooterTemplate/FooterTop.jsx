@@ -1,15 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
 import Clock from '../Clock/Clock';
 
 const FooterTop = () => {
     const footerHeadingTag = {
         topHeading : 'Lazz Polli Convention, Hemayetpur Saver',
-        bottomHeading : 'Local Time'
+        bottomHeading : 'Local Time',
     }
     
-
     return (
         <div>
             <div className="footer-area-top">
@@ -18,19 +15,24 @@ const FooterTop = () => {
                         <div className="header-top-right">
                             <ul className="d-flex cmn">
                                 <li>
-                                  <Link to="/"><i className="fa fa-facebook" aria-hidden="true"></i></Link>
+                                  {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+                                  <a href="https://www.facebook.com/lazzpolli/" target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook" aria-hidden="true"></i></a>
                                 </li>
                                 <li>
-                                    <Link to="/"><i className="fa fa-twitter" aria-hidden="true"></i></Link>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+                                    <a href='https://twitter.com' target="_blank" rel="noopener noreferrer"><i className="fa fa-twitter" aria-hidden="true"></i></a>
                                 </li>
                                 <li>
-                                    <Link to="/"><i className="fa fa-youtube" aria-hidden="true"></i></Link>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+                                    <a href='https://www.youtube.com' target="_blank" rel='noopener noreferrer'><i className="fa fa-youtube" aria-hidden="true"></i></a>
                                 </li>
                                 <li>
-                                    <Link to="/"><i className="fa fa-pinterest-p" aria-hidden="true"></i></Link>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+                                    <a href='https://google.com' target="_blank" rel='noopener noreferrer'><i className="fa fa-pinterest-p" aria-hidden="true"></i></a>
                                 </li>
                                 <li>
-                                    <Link to="/"><i className="fa fa-linkedin" aria-hidden="true"></i></Link>
+                                    {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+                                    <a href='https://linkedin.com' target="_blank" rel='noopener noreferrer'><i className="fa fa-linkedin" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -39,10 +41,10 @@ const FooterTop = () => {
                             <div className="header-top-left">
                                 <ul className="d-flex al-center">
                                     <li>
-                                        <Link to="tel:01778-772327"><i className="fa fa-volume-control-phone" aria-hidden="true"></i><span className="ex-number">+88 01778-772327</span></Link>
+                                        <a href='tel:01778-772327'><i className="fa fa-volume-control-phone" aria-hidden="true"></i><span className="ex-number">+88 01778-772327</span></a>
                                     </li>
                                     <li>
-                                        <Link to="mailto:info@lazzpolli.com"><i className="fa fa-envelope-o" aria-hidden="true"></i>info@lazzpolli.com</Link>
+                                        <a href='mailto:info@lazzpolli.com'><i className="fa fa-envelope-o" aria-hidden="true"></i>info@lazzpolli.com</a>
                                     </li>
                                 </ul>
                             </div>

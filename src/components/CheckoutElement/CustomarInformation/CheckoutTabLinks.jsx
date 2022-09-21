@@ -14,38 +14,37 @@ const CheckoutTabLinks = () => {
     };
     return (
         <div id="niiceeTab">
-        <nav className="niiceeTabBtn">
-           <button
-               id="defaultOpen"
-               className={`tablinks ${
-               actionTab === CHECKOUT_MENU_TAB_BUTTON_NAMES.NEW_CUSTOMER && "active"
-               }`}
-               onClick={tabChangeHandler.bind(
-               null,
-               CHECKOUT_MENU_TAB_BUTTON_NAMES.NEW_CUSTOMER
-               )}
-           >
-              New Customer
-           </button>
-           <button
-               className={`tablinks ${
-               actionTab === CHECKOUT_MENU_TAB_BUTTON_NAMES.EXISTING_CUSTOMER && "active"
-               }`}
-               onClick={tabChangeHandler.bind(
-               null,
-               CHECKOUT_MENU_TAB_BUTTON_NAMES.EXISTING_CUSTOMER
-               )}
-           >
-              Existing Customer
-           </button>
+            <nav className="niiceeTabBtn">
+            <button
+                id="defaultOpen"
+                className={`tablinks ${
+                actionTab === CHECKOUT_MENU_TAB_BUTTON_NAMES.NEW_CUSTOMER && "active"
+                }`}
+                onClick={tabChangeHandler.bind(
+                null,
+                CHECKOUT_MENU_TAB_BUTTON_NAMES.NEW_CUSTOMER
+                )}
+                >
+                New Customer
+            </button>
+            <button
+                className={`tablinks ${
+                actionTab === CHECKOUT_MENU_TAB_BUTTON_NAMES.EXISTING_CUSTOMER && "active"
+                }`}
+                onClick={tabChangeHandler.bind(
+                null,
+                CHECKOUT_MENU_TAB_BUTTON_NAMES.EXISTING_CUSTOMER
+                )}
+                >
+                Existing Customer
+            </button>
+            </nav>
 
-        </nav>
-
-       <div className="niiceeTabContent">
-         {actionTab === CHECKOUT_MENU_TAB_BUTTON_NAMES.NEW_CUSTOMER && <NewCustomarInfo />}
-         {actionTab === CHECKOUT_MENU_TAB_BUTTON_NAMES.EXISTING_CUSTOMER && <ExistingCustomarInfo />}
-       </div>
-   </div> 
+            <div className="niiceeTabContent">
+                {actionTab === CHECKOUT_MENU_TAB_BUTTON_NAMES.NEW_CUSTOMER && <NewCustomarInfo />}
+                {actionTab === CHECKOUT_MENU_TAB_BUTTON_NAMES.EXISTING_CUSTOMER && <ExistingCustomarInfo />}
+            </div>
+       </div> 
     );
 };
 

@@ -9,8 +9,8 @@ const Reviews = () => {
            <div id="Tab7" className="tabcontent">
                 <div className="gallery-grid">
                     {
-                        gallery[5].reviews.map( (item, index ) => 
-                        <ReviewTemplate item={item} key={index} />
+                        gallery[5].reviews.map( (product, index ) => 
+                        <ReviewTemplate product={product} key={index} />
                         )
                     }                 
                 </div>

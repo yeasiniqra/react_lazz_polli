@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from '../../../images/logo-white.png'
-import { Link } from 'react-router-dom'
+import logo from '../../../images/logo-white.png';
+import NewsLogo from '../../../images/logo-black.png';
+import { Link } from 'react-router-dom';
 import Marquee from 'react-fast-marquee';
 
 const FooterMiddle = () => {
     return (
-        <div>
          <section className="footer-area">
             <div className="container">
                 <div className="footer-main-flex">
@@ -16,28 +16,27 @@ const FooterMiddle = () => {
                         <div className="footer-menu">
                             <ul className="footer-links">
                                 <li><Link to="/home">Home</Link></li>
-                                <li><Link to="/">Search Room</Link></li>
+                                <li><Link to="/searchroom">Search Room</Link></li>
                                 <li><Link to="/room">Rooms</Link></li>
-                                <li><Link to="/">Contact</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
                                 <li><Link to="/about">About</Link></li>
-                                <li><Link to="/">Gallery</Link></li>
-                                <li><Link to="/">Career</Link></li>
-                                <li><Link to="/">Suites</Link></li>
-                                <li><Link to="/">Dine</Link></li>
-                                <li><Link to="/">Relax</Link></li>
-                                <li><Link to="/">Enjoy</Link></li>
-                                <li><Link to="/">Checkout</Link></li>
+                                <li><Link to="/gallery">Gallery</Link></li>
+                                <li><Link to="/career">Career</Link></li>
+                                <li><Link to="/room">Suites</Link></li>
+                                <li><Link to="/dine">Dine</Link></li>
+                                <li><Link to="/relax">Relax</Link></li>
+                                <li><Link to="/enjoy">Enjoy</Link></li>
+                                <li><Link to="/checkout">Checkout</Link></li>
                             </ul>
                         </div>
                     </div>
                     <div className="footer-news footer-logo">
                         <div className="footer-marque">
                             <Marquee behavior={"scrolling"} direction={"left"} scrollamount={3}>
-                               <h2>TExplore & Enjoy With Our Resort</h2>
+                               <h2>Explore & Enjoy With Our Resort.</h2>
                              </Marquee>
-                            {/* <marquee behavior="scrolling" direction="left" scrollamount="3"></marquee> */}
                             <div className="footer-overly">
-                                <Link to="/"><img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_vertical.svg" alt="img" /></Link>
+                                <img src={NewsLogo} alt="Footer Logo" />
                             </div>
                         </div>
                     </div>
@@ -45,11 +44,10 @@ const FooterMiddle = () => {
               
                 <div className="footer-bottom">
                     <p>&copy; 2022. Lazz Polli Resort. All rights reserved.</p>
-                    <span>Site by - <a target="_blank" href='https://iqrasys.com' rel="noopener noreferrer">Iqrasys Solutions Ltd</a></span>
+                    <span>Site Developed by - <a target="_blank" href='https://iqrasys.com' rel="noopener noreferrer">Iqrasys Solutions Ltd.</a></span>
                 </div>
             </div>
         </section>
-        </div>
     );
 };
 

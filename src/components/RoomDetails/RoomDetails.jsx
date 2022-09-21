@@ -10,7 +10,7 @@ const RoomDetails = () => {
     const roomData = getRoom(+id);
 
     return (
-        <div>
+        <>
             <PageHeader imageURL={commonBg} title={'Room Details'} />
             <div className='room-search-area'>
                 <div className='container'>
@@ -19,7 +19,7 @@ const RoomDetails = () => {
                     </div> 
                 </div>
             </div>            
-        </div>
+        </>
     );
 };
 

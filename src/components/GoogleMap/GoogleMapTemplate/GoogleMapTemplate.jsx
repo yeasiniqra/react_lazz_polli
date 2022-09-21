@@ -2,6 +2,10 @@ import React from 'react';
 
 
 const GoogleMapTemplate = () => {
+    const title = {
+        title : 'Our location',
+        subTitle : 'Lazz Polli Resort located only 31 miles away from Dhaka. A discrete location surrounded by forest is one of its unique delight. Lazz Polli Resort consists of 62 individual villas for family, couples and honeymooners with attractive facilities'
+    }
    
     return (
         <>
@@ -18,14 +22,11 @@ const GoogleMapTemplate = () => {
                         frameBorder="0"></iframe>
                 </div>
                 <div className="map-widget">
-                    <h3>Our location</h3>
+                    <h3>{title.title}</h3>
                     <div className="map-copy-wrapper">
-                        <p></p>
                         <p>
-                            Lazz Polli Resort located only 31 miles away from Dhaka. A discrete location surrounded by forest is one of its unique delight. Lazz Polli Resort consists of 62 individual villas for family, couples and
-                            honeymooners with attractive facilities.
+                            {title.subTitle}
                         </p>
-                        <p></p>
                     </div>
                     <h3>What's Nearby</h3>
                     <div className="attraction-wrapper">
@@ -36,22 +37,22 @@ const GoogleMapTemplate = () => {
                     <div className="map-widget-filter-wrapper">
                         <ol className="map-widget-filter">
                             <li data-attcatid="0" className="all-attractions 11">
-                                <span className="attraction-name">Jatiyo Sriti Shoudho (National Martyrs' Memorial)</span>
+                                <span className="attraction-name">Jatiyo Sriti Shoudho (National Martyrs' Memorial).</span>
                             </li>
                             <li data-attcatid="0" className="all-attractions 6">
-                                <span className="attraction-name">Jahangirnagar University</span>    
+                                <span className="attraction-name">Jahangirnagar University.</span>    
                             </li>
                             <li data-attcatid="1" className="all-attractions 6">
-                                <span className="attraction-name">Savar Golf Course</span>
+                                <span className="attraction-name">Savar Golf Course.</span>
                             </li>
                             <li data-attcatid="2" className="all-attractions 6">
-                                <span className="attraction-name">Sadullapur Flower Garden</span>
+                                <span className="attraction-name">Sadullapur Flower Garden.</span>
                             </li>
                             <li data-attcatid="3" className="all-attractions 6">
-                                <span className="attraction-name">National Martyr's Monument</span>
+                                <span className="attraction-name">National Martyr's Monument.</span>
                             </li>
                             <li data-attcatid="4" className="all-attractions 6">
-                                <span className="attraction-name">Mohera Jomidar Bari</span>
+                                <span className="attraction-name">Mohera Jomidar Bari.</span>
                             </li>
                         </ol>
                     </div>

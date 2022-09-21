@@ -7,6 +7,9 @@ import RestaurantDineTem from "./RestaurantDineTem/RestaurantDineTem";
 
 const RestaurantDine = () => {
   const getDine = getResortDine();
+  const title = {
+    subTitle : ' Nor again is there anyone who loves or pursues or desires to  obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise.'
+  }
   return (
     <div>
       <PageHeader imageURL={commonBg} title={"Our Restaurant"} />
@@ -17,11 +20,7 @@ const RestaurantDine = () => {
               <span>OUR SPECIAL </span>DISHES
             </h1>
             <small>
-              Nor again is there anyone who loves or pursues or desires to
-              obtain pain of itself, because it is pain, but because
-              occasionally circumstances occur in which toil and pain can
-              procure him some great pleasure. To take a trivial example, which
-              of us ever undertakes laborious physical exercise.
+             {title.subTitle}
             </small>
           </div>
           <div className="details-room-main-grid">
