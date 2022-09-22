@@ -32,8 +32,8 @@ const CareerMain = () => {
                         <div onClick={clickHandeler} className='single'>
                             <div className={`newMnu ${isActive && 'first'}`}>
                                 <img src={item.image_url} alt="x" />
-                                <h3>{item.author.name ? item.author.name : 'not found'}</h3>
-                                <h6>Views : {item.total_view ? item.total_view : 'not found'}</h6>
+                                <h3>{item.author.name ? item.author.name : 'not found items'}</h3>
+                                <h6>Views : {item.total_view ? item.total_view : 'not found items'}</h6>
                             </div>
                         </div>
                     )

@@ -2300,6 +2300,7 @@ p.site ul.footer-links li a:before {
 .add-tocart-overlay.show {
   opacity: 1;
   visibility: visible;
+  transition: 0.4s;
 }
 
 .inner-card-flex {
@@ -2341,8 +2342,8 @@ p.site ul.footer-links li a:before {
 
 .qty-holder2 > aside > small {
 	font-weight: bold;
-	color: #000;
-	padding-right: 3px;
+	color: #fff;
+	padding-right: 4px;
 }
 
 .room-search-cart-right {
@@ -2682,13 +2683,22 @@ select {
 }
 
 .room-chargeq-single > small {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
+  flex: 0 0 50%;
 }
 
 /* .roomNight {
 	font-size: 13px;
 } */
+
+.room-chargeq-single small:last-child {
+	text-align: end;
+}
+
+.hide{
+  display: none;
+}
 
 .room-chargeq {
   margin: 15px 0px;
@@ -2701,8 +2711,9 @@ select {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border: navajowhite;
+  border: none;
   padding: 8px;
+  flex-wrap: wrap;
 }
 
 .special-conditions-check {
@@ -3578,5 +3589,3 @@ textarea:focus{
 	grid-template-columns: repeat(3, 1fr);
 	gap: 35px;
 }
-
-

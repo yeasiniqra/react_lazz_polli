@@ -13,7 +13,7 @@ const HeaderNav = () => {
     const [isActiveSub, setActiveSub] = useState();
     const toggleClassSub = () => {
         setActiveSub(!isActiveSub)
-    };
+    }; 
 
     const [isActiveSearch, setActiveSearch] = useState();
     const toggleClassSearch = () => {
@@ -28,7 +28,9 @@ const HeaderNav = () => {
                         <div className="logo">
                             <Link to="/home"><img src={logo} alt="logo" /></Link>
                         </div>
-                        <button className="nav_icon mobile-desk openbtn" onClick={toggleClass}><i className="fa fa-bars"></i></button>
+                        <button className="nav_icon mobile-desk openbtn" onClick={toggleClass}>
+                            <i className="fa fa-bars"></i>
+                        </button>
                         <div id="mySidepanel" className={`main-menu sidepanel ${isActive && 'showMenu'}`}   >
                             <div  className="mobile-desk closebtn" onClick={toggleClass}>&times;</div>
                             <ul>
@@ -78,7 +80,10 @@ const HeaderNav = () => {
                                     </NavLink>
                                 </li>
                                 <li className="prent-dropdown">
-                                    <Link onClick={toggleClassSub} to="#">Other Page <span className="caret"></span></Link>
+                                    <Link onClick={toggleClassSub} to="#">
+                                        Other Page 
+                                        <span className="caret"></span>
+                                    </Link>
                                     <ul className={`child-dropdown ${isActiveSub && 'showSubMenu'}`}>
                                         <li>
                                             <NavLink
@@ -162,7 +167,9 @@ const HeaderNav = () => {
                         <div className="logo">
                             <Link to="/home"><img src={logoBlack} alt="logo" /></Link>
                         </div>
-                        <button className="nav_icon mobile-desk openbtn" onClick={toggleClass}><i className="fa fa-bars"></i></button>
+                        <button className="nav_icon mobile-desk openbtn" onClick={toggleClass}>
+                            <i className="fa fa-bars"></i>
+                        </button>
                         <div id="mySidepanel2" className={`main-menu sidepanel ${isActive && 'showMenu'}`}>
                            <div  className="mobile-desk closebtn" onClick={toggleClass}>&times;</div>
                            <ul>
@@ -212,7 +219,10 @@ const HeaderNav = () => {
                                     </NavLink>
                                 </li>
                                 <li className="prent-dropdown">
-                                    <Link onClick={toggleClassSub} to="#">Other Page <span className="caret"></span></Link>
+                                    <Link onClick={toggleClassSub} to="#">
+                                        Other Page 
+                                        <span className="caret"></span>
+                                    </Link>
                                     <ul className={`child-dropdown ${isActiveSub && 'showSubMenu'}`} >
                                         <li>
                                             <NavLink
