@@ -3608,10 +3608,16 @@ textarea:focus{
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
+    transition: 0.5s;
+  }
+  50% {
+    transform: rotate(180deg);
+    transition: 0.7s;
   }
 
   100% {
     transform: rotate(359deg);
+    transition: 0.9s;
   }
 }
 

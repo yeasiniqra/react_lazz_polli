@@ -25,6 +25,7 @@ const CareerMain = () => {
         .then(data => setData(data.data))
     },[])
 
+
     return (
         <div className='container'>
             <div className='singleParent'>
@@ -35,6 +36,7 @@ const CareerMain = () => {
                                 <img src={item.image_url} alt="x" />
                                 <h3>{item.author.name ? item.author.name : 'not found items'}</h3>
                                 <h6>Views : {item.total_view ? item.total_view : 'not found items'}</h6>
+                                <h5>Author : {item.author.name ? item.author.name : 'not found items'}</h5>
                             </div>
                         </div>
                     )

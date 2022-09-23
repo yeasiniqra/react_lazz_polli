@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import './Spinner.css'
 
 const Spnieer = () => {
     const [isLoading, setIsLoading] = useState(false);
-    useEffect(() =>{
-        setIsLoading()
-    },[])
+    console.log(isLoading)
     const clickHandeler = () => {
         setIsLoading(isLoading)
     }
