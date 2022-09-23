@@ -3583,9 +3583,48 @@ textarea:focus{
 }
 
 
+/********** career p css ********/
 
 .singleParent {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 35px;
+}
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotate {
+  animation: rotation 1s infinite linear;
+}
+
+.loader-hide {
+  display: none;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+
+.loadParent {
+	position: fixed;
+	left: 50%;
+	z-index: 999;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.loadParent span i{
+  font-size: 50px;
+  color: var(--secundery-color);
 }

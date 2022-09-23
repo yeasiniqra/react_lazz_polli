@@ -31,7 +31,6 @@ const Review = () => {
   }, [email.length, emaileIsTouched, clicked]);
 
   const sendOnClickedHandler = (evt) => {
-    console.log(evt)
     setClicked(true);
     evt.preventDefault();
   };

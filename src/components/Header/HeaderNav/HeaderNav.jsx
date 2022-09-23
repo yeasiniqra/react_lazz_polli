@@ -173,7 +173,7 @@ const HeaderNav = () => {
                         <div id="mySidepanel2" className={`main-menu sidepanel ${isActive && 'showMenu'}`}>
                            <div  className="mobile-desk closebtn" onClick={toggleClass}>&times;</div>
                            <ul>
-                                 <li>
+                                <li>
                                     <NavLink
                                        onClick={toggleClass}
                                         to="/home"

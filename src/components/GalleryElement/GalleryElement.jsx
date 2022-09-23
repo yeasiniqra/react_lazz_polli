@@ -13,7 +13,6 @@ const GalleryElement = () => {
                     <GalleryTabLink />
                  </div>
                </div>
-               
             </section>     
         </>
     );

@@ -14,9 +14,10 @@ const CareerMain = () => {
     }
 
     // https://openapi.programming-hero.com/api/news/categories
-    const [datax, setData] = useState([]);
+
+    const [data, setData] = useState([]);
     // console.log(datax);
-    datax.sort((a,b) => b.total_view - a.total_view)
+    data.sort((a,b) => b.total_view - a.total_view)
 
     useEffect( () => {
         fetch('https://openapi.programming-hero.com/api/news/category/07')
@@ -28,7 +29,7 @@ const CareerMain = () => {
         <div className='container'>
             <div className='singleParent'>
                 {
-                    datax.map(item => 
+                    data.map(item => 
                         <div onClick={clickHandeler} className='single'>
                             <div className={`newMnu ${isActive && 'first'}`}>
                                 <img src={item.image_url} alt="x" />
