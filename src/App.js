@@ -18,12 +18,6 @@ import RoomSearch from './pages/RoomSearch';
 import CheckoutElement from './components/CheckoutElement/CheckoutElement';
 import ErrorPage from './pages/ErrorPage';
 
-
-const loader = document.querySelector(".preloader");
-
-const showLoader = () => loader.classList.remove("preloader");
-const addClass = () => loader.classList.add("loader-hide");
-
 function App() {
   const location = useLocation();
 
@@ -36,10 +30,7 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [location]);
 
-  useEffect(() => {
-    showLoader();
-    addClass();
-  }, []);
+
 
   return (
     <div className="App">

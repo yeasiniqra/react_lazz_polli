@@ -37,9 +37,9 @@ const SearchCard = ({item}) => {
                     <div className={`add-tocart-overlay ${isActive && 'show'}`}>
                         <div className="inner-card-flex">
                             <div className="qty-holder2">
-                                <span onClick={DecOnClickedHandler} className="qty-dec-btn2" title="Dec">-</span>
+                                <span onClick={DecOnClickedHandler} className="qty-dec-btn2" title="Dec button">-</span>
                                 <aside><small>{count}</small>{item.overlyBtn}</aside>
-                                <span onClick={IncOnClickedHandler} className="qty-inc-btn2" title="Inc">+</span>
+                                <span onClick={IncOnClickedHandler} className="qty-inc-btn2" title="Inc button">+</span>
                             </div>
                         </div>
                     </div>

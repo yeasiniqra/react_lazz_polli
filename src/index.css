@@ -2838,19 +2838,16 @@ select {
 }
 
 .room-service-list > ul li {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 35%;
-  flex: 0 0 35%;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ddd;
-  padding: 3px 20px;
-  position: relative;
-  font-weight: 500;
-  font-family: var(--roboto);
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  cursor: pointer;
+	flex: 0 0 38%;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	padding: 3px 20px;
+	position: relative;
+	font-weight: 500;
+	font-family: var(--roboto);
+	transition: 0.5s;
+	cursor: pointer;
+	text-transform: capitalize;
 }
 
 .room-service-list > ul li::after {
@@ -3591,46 +3588,23 @@ textarea:focus{
 	gap: 35px;
 }
 
-.preloader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.product-grid{
+  display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 35px;
 }
 
-.rotate {
-  animation: rotation 1s infinite linear;
+.singleProduct {
+	border: 1px solid #ddd;
+	padding: 10px;
 }
 
-.loader-hide {
-  display: none;
+.summery{
+  position: sticky;
+  top: 100px;
+  right: 0px;
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-    transition: 0.5s;
-  }
-  50% {
-    transform: rotate(180deg);
-    transition: 0.7s;
-  }
-
-  100% {
-    transform: rotate(359deg);
-    transition: 0.9s;
-  }
-}
-
-
-.loadParent {
-	position: fixed;
-	left: 50%;
-	z-index: 999;
-	top: 50%;
-	transform: translate(-50%,-50%);
-}
-
-.loadParent span i{
-  font-size: 50px;
-  color: var(--secundery-color);
+.summeryx {
+	float: right;
 }
