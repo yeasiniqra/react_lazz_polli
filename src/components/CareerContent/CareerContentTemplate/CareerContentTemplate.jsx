@@ -7,14 +7,16 @@ const CareerContentTemplate = () => {
         title : 'Are you Dedicated, Hardworking and Fun? Join Us!',
         subTitle : 'We believe in those people who are passionate about their work and feel the joy of working. We are always welcome and eagerly waiting for you.'
     }
+
+    const {title, subTitle} = careerContent;
     return (
         <>
         <section className="career-page-area">
             <div className="container">
                 <div className="drop-cv-main">
                     <div className="drop-cv-left">
-                        <h3>{careerContent.title}</h3>
-                        <span>{careerContent.subTitle}</span>
+                        <h3>{title}</h3>
+                        <span>{subTitle}</span>
 
                         <div className="career-form">
                             <form id="resume-form">

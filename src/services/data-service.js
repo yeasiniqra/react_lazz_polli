@@ -696,7 +696,6 @@ const APP_DATA = {
         },
     ]
 
-
 };
 
 

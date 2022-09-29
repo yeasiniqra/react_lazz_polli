@@ -3578,33 +3578,3 @@ textarea:focus{
 	color: #000;
   transition: 00.4s;
 }
-
-
-/********** career p css ********/
-
-.singleParent {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 35px;
-}
-
-.product-grid{
-  display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 35px;
-}
-
-.singleProduct {
-	border: 1px solid #ddd;
-	padding: 10px;
-}
-
-.summery{
-  position: sticky;
-  top: 100px;
-  right: 0px;
-}
-
-.summeryx {
-	float: right;
-}
