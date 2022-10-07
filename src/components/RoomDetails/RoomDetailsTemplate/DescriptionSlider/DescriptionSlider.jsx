@@ -2,20 +2,10 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
-import singleOne from "../../../../images/dtl2.jpg";
-import singleTwo from "../../../../images/dtl.jpg";
-import singleThree from "../../../../images/dtl3.jpg";
-import singleFour from '../../../../images/6.png';
 import GalleryPreview from "../../../Sheared/GalleryPreview/GalleryPreview";
 import { useState } from "react";
 
 const DescriptionSlider = ( {room} ) => {
-    const singleImages = [
-        { image: singleOne },
-        { image: singleTwo },
-        { image: singleThree },
-        { image: singleFour },
-      ];
       const options = {
         rewind: true,
         type: "fade",
@@ -29,20 +19,15 @@ const DescriptionSlider = ( {room} ) => {
       };
     
 
-      const [preview, setPreview] = useState({ show: false, images: [], start: 0});
+      const [preview, setPreview] = useState({ show: false, images: {}, start: 0});
 
       const previewCloseHandler = () => {
         setPreview({ show: false, images: [], start: 0});
       };
     
       const checkClickHandler = (index) => {
-        const  images = [
-          { url: singleOne },
-          { url: singleTwo },
-          { url: singleThree },
-          { url: singleFour },
-        ];
-        
+        const images = room.roomSingle[0].images.map(item => item.image);
+
         setPreview({
           show: true,
           images,
@@ -50,13 +35,12 @@ const DescriptionSlider = ( {room} ) => {
         });
       };
 
-
     return (
       <>
         <div className="dts-left-img">
             <div className="dts_banner_slide">
                 <Splide options={options} aria-label="React Splide Example">
-                    {singleImages.map((imagesSlide, index) => (
+                    {room.roomSingle[0].images.map((imagesSlide, index) => (
                     <SplideSlide key={index}>
                         <img
                           className="gallery__Image"
@@ -76,7 +60,7 @@ const DescriptionSlider = ( {room} ) => {
                 </h4>
             </div>
        </div>
-      <GalleryPreview start={preview.start} show={preview.show} images={preview.images} onClose={previewCloseHandler} />
+        <GalleryPreview start={preview.start} show={preview.show} images={preview.images} onClose={previewCloseHandler} />
       </>
     );
 };

@@ -1,16 +1,12 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 
-
-const RestaurantTemplate = ({product}) => {
+const RestaurantTemplate = ({product,index,checkClickHandler}) => {
 
     return (
         <div className="gallery-single-item">
-        <Link to='/'>
-            <img src={product.image} alt="lorem" />
-        </Link>
+           <img onClick={checkClickHandler.bind(null,index)} src={product.image} alt="lorem" />
         <div className="gallery-overly">
-            <img className="gallery__Image" src={product.image} alt="lorem" data-large={product.image} />
+            <img onClick={checkClickHandler.bind(null,index)} className="gallery__Image" src={product.image} alt="lorem" data-large={product.image} />
         </div>
     </div> 
     ); 

@@ -30,8 +30,6 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [location]);
 
-
-
   return (
     <div className="App">
       <Header />

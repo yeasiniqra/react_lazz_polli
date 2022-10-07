@@ -1,18 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const ActivitesTemplate = ({ product }) => {
+const ActivitesTemplate = ({ product,checkClickHandler, index }) => {
   return (
     <div className="gallery-single-item">
-        <Link to="/">
-          <img src={product.image} alt="lorem" />
-        </Link>
+          <img onClick={checkClickHandler.bind(null,index)} src={product.image} alt="lorem" />
         <div className="gallery-overly">
           <img
+             onClick={checkClickHandler.bind(null, index)}
             className="gallery__Image"
             src={product.image}
             alt="GalleryImage"
             data-large={product.image}
+           
           />
         </div>
     </div>

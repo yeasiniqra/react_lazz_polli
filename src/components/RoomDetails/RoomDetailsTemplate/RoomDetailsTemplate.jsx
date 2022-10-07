@@ -8,9 +8,9 @@ const RoomDetailsTemplate = ({room}) => {
     <>
       <div className="details-room-main-grid-inner">
         <DescriptionSlider room={room} />
-        <RoomDescService />
+        <RoomDescService room={room} />
       </div>
-      <RoomReview />
+      <RoomReview room={room} />
     </>
   );
 };

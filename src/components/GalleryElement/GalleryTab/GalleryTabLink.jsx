@@ -13,7 +13,8 @@ const GalleryTabLink = () => {
       );
 
     const tabChangeHandler = (tabName) => {
-    setActionTab(tabName);
+        console.log(tabName)
+        setActionTab(tabName);
     };
       
       

@@ -112,17 +112,21 @@
     }
 
     .openbtn {
-        font-size: 22px;
+        font-size: 28px;
         cursor: pointer;
         background-color: transparent;
-        color: var(--secundery-color);
-        padding: 6px 13px;
+        color: #fff;
         border: none;
         position: relative;
         top: -3px;
     }
+    .main-header-area.fade-in .animi .openbtn {
+        color: #000;
+    }
+
     .main-menu-flex {
         justify-content: space-between;
+        padding: 2px 0px;
     }
     .main-menu > ul > li > ul > li a {
         color: #fff !important;
@@ -191,6 +195,71 @@
     .drop-cv-left h3 {
         font-size: 30px;
     }
+    .banner-content h2 {
+        font-size: 40px;
+    }
+    .banner-content-overly {
+        max-width: 430px;
+        right: 0px;
+    }
+    figure.effect-layla h3 {
+        font-size: 30px;
+    }
+    h6.find-more {
+        position: absolute;
+        bottom: 160px;
+        left: 34%;
+    }
+    .logo > a > img {
+        width: 70px;
+    }
+    .other-page-area {
+        padding-top: 135px;
+        padding-bottom: 70px;
+    }
+    .other-page-area .common-heading h2 {
+        font-size: 35px;
+    }
+    .about-us-area {
+        padding: 35px 0px;
+    }
+    .staff-single-item {
+        align-self: self-start;
+    }
+    .our-service-area {
+        padding-bottom: 25px;
+    }
+    .our-resort-staff-area.our-service-area {
+        padding-top: 25px;
+    }
+    .support-given-area {
+        padding: 20px 0;
+    }
+    .Gallery_modal-close__jpaTQ {
+        top: 0px;
+    }
+    .gallery-area {
+        padding: 30px 0px;
+    }
+    .gallery-main-grid .niiceeTabContent {
+        padding: 10px 20px;
+    }
+    .room-search-area {
+        padding: 25px 0px;
+    }
+    .other-page-heading > h1 {
+        font-size: 25px;
+    }
+    .relax-area {
+        padding: 25px 0px;
+    }
+    .relax-spa-img-content h1 {
+        font-size: 32px;
+    }
+    .footer-logo > a > img {
+        width: 115px;
+    }
+
 }
 
 @media all and (max-width: 767px) {
@@ -284,7 +353,7 @@
         flex-wrap: wrap;
     }
     .drop-cv-left h3 {
-        font-size: 25px;
+        font-size: 23px;
     }
     .current-oppertunity-empty-content span {
         width: 85%;
@@ -300,10 +369,10 @@
         font-size: 13px;
     }
     .footer-logo > a > img {
-        width: 115px;
+        width: 100px;
     }
     .other-page-area {
-        padding-top: 130px;
+        padding-top: 120px;
         padding-bottom: 50px;
     }
     .sidepanel {
@@ -369,7 +438,7 @@
         margin-top: 35px;
     }
     .other-page-area .common-heading h2 {
-        font-size: 36px;
+        font-size: 35px;
     }
     .room-search-cart-left > h3 {
         font-size: 16px;
@@ -421,16 +490,16 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .staff-main-grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr); 
     }
     .other-page-heading > h1 {
-        font-size: 25px;
+        font-size: 22px;
     }
     p {
         font-size: 14px;
     }
     .gallery-main-grid .niiceeTabBtn button {
-        margin: 8px;
+        margin: 4px;
     }
     .gallery-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -458,9 +527,129 @@
     .main-menu > ul {
         margin-left: 25px;
     }
+    .common-btn > a {
+        font-size: 14px;
+    }
+    .common-btn {
+        margin-top: 15px;
+    }
+    .banner-content h2 {
+        font-size: 28px;
+    }
+    .banner-content p {
+        font-size: 15px;
+    }
+    h6.find-more {
+        bottom: 175px;
+    }
+    h6.find-more {
+        bottom: 82px;
+    }
+    figure.effect-layla h3 {
+        padding: 80px 0px 10px 0px;
+    }
+    .support-given-single-item {
+        flex: 0 0 24%;
+    }
+    .support-given-single-item {
+        padding: 15px;
+    }
+    .location {
+        padding: 25px 0px;
+    }
+    .support-given-single-item span {
+        font-size: 16px;
+    }
+    .support-gif-icon .display_4 span {
+        font-size: 20px;
+    }
+    .display_4 {
+        width: 120px;
+        height: 120px;
+        line-height: 120px !important;
+    }
+    .support-gif-icon {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+    }
+    .support-given-area {
+        padding: 25px 0;
+    }
+    .common-heading h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .location .map-widget .attraction-trigger-wrapper a {
+        font-size: 16px;
+    }
+    #current-time {
+        font-size: 14px;
+    }
+    .footer-bottom span {
+        font-size: 14px;
+    }
+    .location .map-widget p:first-of-type {
+        text-align: justify;
+    }
+    .slide.custom-splide {
+        max-height: 100%;
+    }
+    .grid figure {
+        max-height: 260px;
+    }
+    figure.effect-layla img {
+        height: 300px;
+    }
+    .room-search-area {
+        padding: 30px 0px;
+    }
+    .reqest-demo-right ul li i {
+        font-size: 25px;
+    }
+    .reqest-demo-right ul li {
+        margin: 15px 0px;
+    }
+    .contact-inner-gradient {
+        padding: 15px;
+    }
+    .contact-search-area {
+        padding-top: 30px;
+    }
+    .service-single-item-grid {
+        margin-top: 15px;
+    }
+    .gallery-main-grid .niiceeTabContent {
+        padding: 10px 0px;
+    }
+    .book_table_inner {
+        padding: 20px;
+        margin-top: 0px !important;
+    }
+    .career-page-area {
+        padding: 25px 0px;
+    }
+    .oppertunites-area {
+        padding: 25px 0px;
+    }
+    .current-oppertunity-empty-content span {
+        font-size: 14px;
+    }
+    .current-oppertunity-empty-content img {
+        max-width: 130px;
+    }
+    .relax-spa-inner-grid {
+        margin-bottom: 30px;
+    }
+    .relax-spa-img-content h1 {
+        font-size: 25px;
+    }
 
 
 }
+
 
 @media all and (max-width: 413px) {
     .main-menu > ul ul {
@@ -474,4 +663,27 @@
     }
 }
 
-@media all and (max-width: 374px) {}
+@media all and (max-width: 374px) {
+    .header-top-left > ul > li > a, .header-top-right > ul > li > a {
+        font-size: 11px;
+    }
+    p {
+        font-size: 13px;
+    }
+    figure.effect-layla h3 {
+        font-size: 26px;
+    }
+    .gallery-main-grid .niiceeTabBtn button {
+        padding: 15px 8px;
+    }
+    .niiceeTabBtn button {
+        font-size: 12px;
+    }
+    .custom-file-input:lang(en) ~ .custom-file-label::after {
+        font-size: 14px;
+    }
+    .custom-inputs > button {
+        font-size: 14px;
+        padding: 0px 16px;
+    }
+}

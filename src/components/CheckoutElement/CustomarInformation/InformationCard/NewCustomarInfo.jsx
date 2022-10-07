@@ -13,7 +13,7 @@ const NewCustomarInfo = () => {
   const checkClickHandler = () => {
     setAlert({
       show: true,
-      text: `Your submission has been received. Your order number is "007230090".Our agent will call your number "0172000000" to reconfirm.`,
+      text: `Your submission has been received. Your order number is "0070230090". Our agent will call your number "0172000000" to reconfirm.`,
     });
   };
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import Description from './Description';
 
-const RoomDescService = () => {
+const RoomDescService = ({room}) => {
     return (
         <>
-            <Description />
+            <Description room={room} />
         </>
     );
 };

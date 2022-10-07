@@ -738,7 +738,7 @@ p {
   position: absolute;
   z-index: 1;
   width: 100%;
-  bottom: 35px;
+  bottom: 50px;
   max-width: 493px;
   right: 30px;
 }
@@ -1021,8 +1021,8 @@ figure.effect-layla h3 {
 
 h6.find-more {
   position: absolute;
-  bottom: 60px;
-  left: 43%;
+  bottom: 90px;
+  left: 42%;
 }
 h6.find-more a {
   color: #fff;
@@ -1649,9 +1649,12 @@ p.site ul.footer-links li a:before {
 /*Link Hover Ends*/
 
 .footer-area-top {
-  background: #463120;
+  background: var(--main-color);
   padding: 5px 0px;
   overflow: hidden;
+  box-shadow: 0px 0px 15px rgba(255,255,255,0.5);
+  position: relative;
+  z-index: 2;
 }
 
 .footer-top-flex {
@@ -1668,6 +1671,7 @@ p.site ul.footer-links li a:before {
 .footer-top-content > p {
   color: #fff;
   font-size: 13px;
+  text-align: left;
 }
 
 #current-time {
@@ -3577,4 +3581,27 @@ textarea:focus{
 .choose-room-single-item:hover .room-content-x h3 span {
 	color: #000;
   transition: 00.4s;
+}
+
+.gallery-single-item{
+  max-height: 280px;
+}
+
+.gallery-single-item > img {
+	height: 100%;
+}
+
+.butterfly-stacic {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.butterfly-stacic > img {
+  width: 75px;
+}
+
+.banner-area {
+  position: relative;
 }

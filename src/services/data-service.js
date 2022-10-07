@@ -11,11 +11,12 @@ import bannerNine from '../images/slider/9.webp';
 import bannerTen from '../images/slider/10.webp';
 
 
+
 // Find Homme Room iamges
-import findOne from '../images/rooms-thumb.jpg';
-import findTwo from '../images/dine-thumb-new.jpg';
-import findThree from '../images/relax-thumb.jpg';
-import findFour from '../images/enjoy-thumb-2018.jpg';
+import findOne from '../images/relax/spa.jpg';
+import findTwo from '../images/relax/jacuzzi.jpg';
+import findThree from '../images/relax/gym.jpg';
+import findFour from '../images/relax/amphitheater.jpg';
 
 // Resort director iamges
 import dicOne from '../images/st3.jpg';
@@ -286,22 +287,51 @@ const APP_DATA = {
         {
             id: 0,
             image : roomOne,
-            images: [
-                {
-                    image : singleOne,
-                },
-                {
-                    image : singleTwo,
-                },
-                {
-                    image : singleThree,
-                },
-
-            ],
             roomTitle : "Day Long couples",
             roomAmount : "7,000.0৳",
             dayNight : "Night",
             btnText : "View details",
+            roomSingle : [
+                {
+                    images : [
+                        {
+                            image : roomOne,
+                        },
+                        {
+                            image : singleOne,
+                        },
+                        {
+                            image : singleTwo,
+                        },
+                    ]
+                },
+                {
+                    title : 'Room Description 1',
+                    description : "The park area is totally eco friendly features with beautiful natural landscaping, garden areas, playground, lakes that make it a great place for recreational activities. The Rajendra Eco Resort & Village Cottage Park Standard Rooms are designed to hospitalities the families who are looking for a secure and comfortable place with all modern amenities within a budget. It’s the perfect place for a family getaway or romantic escape for two.",
+                    subTitle : 'Room Services 1'
+                },
+                {
+                    roomService : [
+                        { serviceTitle : "Breakfast Included 1"},
+                        { serviceTitle : "Free wifi"},
+                        { serviceTitle : "Double Bed"},
+                        { serviceTitle : "120 sq mt."},
+                        { serviceTitle : "8 persons"},
+                        { serviceTitle : "Free internet"},
+                        { serviceTitle : "private balcony"},
+                        { serviceTitle : "good room service"},
+                        { serviceTitle : "flat screen tv"},
+                        { serviceTitle : "fully AC"},
+                        { serviceTitle : "mountain view"},
+                        { serviceTitle : "free pick & drop facilies"},
+                    ]
+                },
+                {
+                    infoTab : ' Additional Information',
+                    reviewTab : ' Reviews'
+                }
+
+            ],
         },
         {
             id: 1,
@@ -310,6 +340,47 @@ const APP_DATA = {
             roomAmount : "7,000.0৳",
             dayNight : "Night",
             btnText : "View details",
+            roomSingle : [
+                {
+                    images : [
+                        {
+                            image : singleOne,
+                        },
+                        {
+                            image : singleTwo,
+                        },
+                        {
+                            image : singleThree,
+                        },
+                    ]
+                },
+                {
+                    title : 'Room Description 2',
+                    description : "The park area is totally eco friendly features with beautiful natural landscaping, garden areas, playground, lakes that make it a great place for recreational activities. The Rajendra Eco Resort & Village Cottage Park Standard Rooms are designed to hospitalities the families who are looking for a secure and comfortable place with all modern amenities within a budget. It’s the perfect place for a family getaway or romantic escape for two.",
+                    subTitle : 'Room Services 2'
+                },
+                {
+                    roomService : [
+                        { serviceTitle : "Breakfast Included 2"},
+                        { serviceTitle : "Free wifi"},
+                        { serviceTitle : "Double Bed"},
+                        { serviceTitle : "120 sq mt."},
+                        { serviceTitle : "8 persons"},
+                        { serviceTitle : "Free internet"},
+                        { serviceTitle : "private balcony"},
+                        { serviceTitle : "good room service"},
+                        { serviceTitle : "flat screen tv"},
+                        { serviceTitle : "fully AC"},
+                        { serviceTitle : "mountain view"},
+                        
+                    ]
+                },
+                {
+                    infoTab : ' Additional Information',
+                    reviewTab : ' Reviews'
+                }
+
+            ],
         },
         {
             id: 2,
@@ -318,6 +389,44 @@ const APP_DATA = {
             roomAmount : "7,000.0৳",
             dayNight : "Night",
             btnText : "View details",
+            roomSingle : [
+                {
+                    images : [
+                        {
+                            image : singleOne,
+                        },
+                        {
+                            image : singleTwo,
+                        },
+                        {
+                            image : singleThree,
+                        },
+                    ]
+                },
+                {
+                    title : 'Room Description 3',
+                    description : "The park area is totally eco friendly features with beautiful natural landscaping, garden areas, playground, lakes that make it a great place for recreational activities. The Rajendra Eco Resort & Village Cottage Park Standard Rooms are designed to hospitalities the families who are looking for a secure and comfortable place with all modern amenities within a budget. It’s the perfect place for a family getaway or romantic escape for two.",
+                },
+                {
+                    roomService : [
+                        { serviceTitle : "Breakfast Included 3"},
+                        { serviceTitle : "Free wifi"},
+                        { serviceTitle : "Double Bed"},
+                        { serviceTitle : "120 sq mt."},
+                        { serviceTitle : "8 persons"},
+                        { serviceTitle : "Free internet"},
+                        { serviceTitle : "good room service"},
+                        { serviceTitle : "flat screen tv"},
+                        { serviceTitle : "fully AC"},
+                        { serviceTitle : "mountain view"},
+                        
+                    ]
+                },
+                {
+                    infoTab : ' Additional Information',
+                    reviewTab : ' Reviews'
+                }
+            ]
         },
         {
             id: 3,
@@ -326,6 +435,44 @@ const APP_DATA = {
             roomAmount : "7,000.0৳",
             dayNight : "Night",
             btnText : "View details",
+            roomSingle : [
+                {
+                    images : [
+                        {
+                            image : singleOne,
+                        },
+                        {
+                            image : singleTwo,
+                        },
+                        {
+                            image : singleThree,
+                        },
+                    ]
+                },
+                {
+                    title : 'Room Description 4',
+                    description : "The park area is totally eco friendly features with beautiful natural landscaping, garden areas, playground, lakes that make it a great place for recreational activities. The Rajendra Eco Resort & Village Cottage Park Standard Rooms are designed to hospitalities the families who are looking for a secure and comfortable place with all modern amenities within a budget. It’s the perfect place for a family getaway or romantic escape for two.",
+                },
+                {
+                    roomService : [
+                        { serviceTitle : "Breakfast Included 4"},
+                        { serviceTitle : "Free wifi"},
+                        { serviceTitle : "Double Bed"},
+                        { serviceTitle : "120 sq mt."},
+                        { serviceTitle : "8 persons"},
+                        { serviceTitle : "Free internet"},
+                        { serviceTitle : "good room service"},
+                        { serviceTitle : "flat screen tv"},
+                        { serviceTitle : "fully AC"},
+                        { serviceTitle : "mountain view"},
+                        
+                    ]
+                },
+                {
+                    infoTab : ' Additional Information',
+                    reviewTab : ' Reviews'
+                }
+            ]
         },
         {
             id: 4,
@@ -334,6 +481,44 @@ const APP_DATA = {
             roomAmount : "7,000.0৳",
             dayNight : "Night",
             btnText : "View details",
+            roomSingle : [
+                {
+                    images : [
+                        {
+                            image : singleOne,
+                        },
+                        {
+                            image : singleTwo,
+                        },
+                        {
+                            image : singleThree,
+                        },
+                    ]
+                },
+                {
+                    title : 'Room Description 5',
+                    description : "The park area is totally eco friendly features with beautiful natural landscaping, garden areas, playground, lakes that make it a great place for recreational activities. The Rajendra Eco Resort & Village Cottage Park Standard Rooms are designed to hospitalities the families who are looking for a secure and comfortable place with all modern amenities within a budget. It’s the perfect place for a family getaway or romantic escape for two.",
+                },
+                {
+                    roomService : [
+                        { serviceTitle : "Breakfast Included 5"},
+                        { serviceTitle : "Free wifi"},
+                        { serviceTitle : "Double Bed"},
+                        { serviceTitle : "120 sq mt."},
+                        { serviceTitle : "8 persons"},
+                        { serviceTitle : "Free internet"},
+                        { serviceTitle : "good room service"},
+                        { serviceTitle : "flat screen tv"},
+                        { serviceTitle : "fully AC"},
+                        { serviceTitle : "mountain view"},
+                        
+                    ]
+                },
+                {
+                    infoTab : ' Additional Information',
+                    reviewTab : ' Reviews'
+                }
+            ]
         },
     ],
     ResortDine:[
@@ -507,21 +692,27 @@ const APP_DATA = {
             space: [
                 {
                     image : galleryOne,
+                    id : 0
                 },
                 {
                     image : galleryTwo,
+                    id : 1
                 },
                 {
                     image : galleryThree,
+                    id : 2
                 },
                 {
                     image : galleryFour,
+                    id : 3
                 },
                 {
                     image : galleryFive,
+                    id : 4
                 },
                 {
                     image : gallerySix,
+                    id : 5
                 },
             ]
         },
@@ -694,10 +885,9 @@ const APP_DATA = {
             btnText : 'Book Room',
             overlyBtn : 'Item Add'
         },
-    ]
+    ],
 
 };
-
 
 
 export const getBanners = () => {

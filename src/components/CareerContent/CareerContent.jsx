@@ -7,7 +7,8 @@ const CareerContent = () => {
     return (
         <>
             <PageHeader imageURL={commonBg} title='Career'/>
-            <CareerContentTemplate />  
+            <CareerContentTemplate />
+           
         </>
         
     );

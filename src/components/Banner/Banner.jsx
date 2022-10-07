@@ -3,6 +3,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { getBanners } from "../../services/data-service";
 import BannerTemplate from "./BannerTemplate/BannerTemplate";
+import butterfly from '../../images/butterfly3.gif'
 
 const Banner = () => {
   const banners = getBanners();
@@ -20,6 +21,9 @@ const Banner = () => {
 
   return (
     <div className="banner-area">
+      <div className="butterfly-stacic">
+        <img src={butterfly} alt="0butterfly" />
+      </div>
       <Splide options={options} aria-label="React Splide Example">
         {
             banners.map((banner, index) => (

@@ -8,10 +8,22 @@ const FooterTop = () => {
     }
     
     return (
-        <div>
             <div className="footer-area-top">
                 <div className="container">
                     <div className="footer-top-flex">
+                        <div className="footer-top-content">
+                            <p>{footerHeadingTag.topHeading}</p>
+                            <div className="header-top-left">
+                                <ul className="d-flex al-center">
+                                    <li>
+                                        <a href='tel:01778-772327'><i className="fa fa-volume-control-phone" aria-hidden="true"></i><span className="ex-number">+88 01778-772327</span></a>
+                                    </li>
+                                    <li>
+                                        <a href='mailto:info@lazzpolli.com'><i className="fa fa-envelope-o" aria-hidden="true"></i>info@lazzpolli.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div className="header-top-right">
                             <ul className="d-flex cmn">
                                 <li>
@@ -36,19 +48,6 @@ const FooterTop = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="footer-top-content">
-                            <p>{footerHeadingTag.topHeading}</p>
-                            <div className="header-top-left">
-                                <ul className="d-flex al-center">
-                                    <li>
-                                        <a href='tel:01778-772327'><i className="fa fa-volume-control-phone" aria-hidden="true"></i><span className="ex-number">+88 01778-772327</span></a>
-                                    </li>
-                                    <li>
-                                        <a href='mailto:info@lazzpolli.com'><i className="fa fa-envelope-o" aria-hidden="true"></i>info@lazzpolli.com</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                         <div className="footer-time">
                             <span>{footerHeadingTag.bottomHeading}</span>
                             <Clock />
@@ -56,7 +55,6 @@ const FooterTop = () => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 

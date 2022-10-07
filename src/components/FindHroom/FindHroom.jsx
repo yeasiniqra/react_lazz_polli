@@ -6,9 +6,9 @@ const FindHroom = () => {
     const FindHroom = getFindHroom();
    
     return (
-        <div>
+        <>
             <FindHroomTemplate FindHroom={FindHroom} />
-        </div>
+        </>
     );
 };
 

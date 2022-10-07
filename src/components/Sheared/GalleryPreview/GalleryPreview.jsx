@@ -28,9 +28,8 @@ const GalleryPreview = ({ show, onClose, images = [], start }) => {
                         <SplideSlide key={index}>
                             <img
                                className="gallery__Image"
-                               src={image.url}
+                               src={image}
                                alt="b1.png"
-                               data-large={image.url}
                             />
                         </SplideSlide>
                         ))}

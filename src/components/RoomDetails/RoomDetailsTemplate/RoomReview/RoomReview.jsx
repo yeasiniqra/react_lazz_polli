@@ -3,7 +3,8 @@ import Adinfo from './Adinfo';
 import Review from './Review';
 
 
-const RoomReview = () => {
+const RoomReview = ({room}) => {
+    // console.log(room)
     const ref = useRef(null);
     const [isActive, setisActive] = useState(false);
     const toggleHandler = () => {
@@ -30,16 +31,16 @@ const RoomReview = () => {
                     className="tablinks" 
                     onClick={toggleHandler}
                     >
-                        Additional Information
+                       {room.roomSingle[3].infoTab}
                     </button>
                     <button className="tablinks" onClick={toggleHandler}>
-                        Reviews
+                    {room.roomSingle[3].reviewTab}
                     </button>
                 </nav>
 
                 <div className="tabbed niiceeTabContent">
-                    {!isActive && <Adinfo />}
-                    {isActive && <Review />}
+                    {!isActive && <Adinfo room={room} />}
+                    {isActive && <Review room={room} />}
                 </div>
             </div>
         </div> 
