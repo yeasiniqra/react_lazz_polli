@@ -36,7 +36,7 @@ const CareerContentTemplate = () => {
                     </div>
                 </div>
             </div>
-    </section>
+     </section>
      <OppertunityTem />   
     </>
     );

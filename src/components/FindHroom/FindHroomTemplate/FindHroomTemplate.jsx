@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
+
 const FindHroomTemplate = ({FindHroom}) => {
     return (
       <>
@@ -14,6 +15,7 @@ const FindHroomTemplate = ({FindHroom}) => {
                                     <img src={FindHroom[1].image2} alt="lazz polli" />
                                     <figcaption>
                                         <h3>{FindHroom[1].topHeading2} </h3>
+                                        
                                         <h6 className="find-more"><Link to={FindHroom[1].link2}>{FindHroom[1].topBtn2} </Link></h6>
                                         <h2><span>{FindHroom[1].btmHeading2} </span></h2>
                                         <p>{FindHroom[1].description2} </p>
@@ -36,7 +38,6 @@ const FindHroomTemplate = ({FindHroom}) => {
                                 </figure>
                             </div>
                         </div>
-                        
                     </div>
                     <div className="row custom-rows">
                         <div className="col-md-7">

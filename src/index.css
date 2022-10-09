@@ -499,11 +499,11 @@ p {
   margin-left: 10px;
   border-radius: 5px;
 }
-.main-menu > ul > li.book-now:hover a {
+/* .main-menu > ul > li.book-now:hover a {
   background: transparent;
   border: 2px solid var(--secundery-color);
   color: #fff;
-}
+} */
 
 .main-menu > ul ul {
   position: absolute;
@@ -936,6 +936,7 @@ figure.effect-layla img,
 figure.effect-layla h2 {
   -webkit-transform: translate3d(0, -30px, 0);
   transform: translate3d(0, -30px, 0);
+  font-family: "Poppins", sans-serif;
 }
 
 figure.effect-layla img {
@@ -957,6 +958,7 @@ figure.effect-layla img {
   left: 0;
   width: 100%;
   height: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 .grid figure figcaption {
@@ -965,6 +967,7 @@ figure.effect-layla img {
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
 figure.effect-layla figcaption {
@@ -980,7 +983,7 @@ figure.effect-layla figcaption::before {
   border-bottom: 1px solid #fff;
   -webkit-transform: scale(0, 1);
   -ms-transform: scale(0, 1);
-  transform: scale(0, 1);
+  transform: scale(1, 1);
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
@@ -990,7 +993,7 @@ figure.effect-layla figcaption::before,
 figure.effect-layla figcaption::after {
   position: absolute;
   content: "";
-  opacity: 0;
+  opacity: 1;
 }
 
 .grid figure figcaption::before,
@@ -1011,54 +1014,71 @@ figure.effect-layla h3 {
   color: #fff;
   font-size: 37px;
   letter-spacing: 2px;
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */
   width: 70%;
   margin: 0 auto;
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
+  font-family: "Poppins", sans-serif;
 }
 
 h6.find-more {
   position: absolute;
   bottom: 90px;
   left: 42%;
+  font-family: "Poppins", sans-serif;
 }
 h6.find-more a {
   color: #fff;
   -webkit-transition-duration: 0.7s;
   -o-transition-duration: 0.7s;
   transition-duration: 0.7s;
+  font-family: "Poppins", sans-serif;
 }
 
 figure.effect-layla h2 {
-  padding-top: 0px;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
-  -o-transition: transform 0.35s;
-  transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-  opacity: 0;
-  color: #fff;
-  font-size: 35px;
-  padding-top: 25px;
+	padding-top: 0px;
+	transition: transform 0.35s;
+	opacity: 0;
+	color: #fff;
+	font-size: 35px;
+	padding-top: 25px;
+	border-bottom: 1px solid #fff;
+	width: 70%;
+	margin: 0 auto;
+  font-family: "Poppins", sans-serif;
 }
+
 .grid figure h2 span {
-  font-family: "Century Gothic", serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-shadow: 0px 10px 15px #000;
 }
-figure.effect-layla p {
+/* figure.effect-layla p {
   padding: 0.5em 2em;
   text-transform: none;
   opacity: 0;
   -webkit-transform: translate3d(0, -10px, 0);
   transform: translate3d(0, -10px, 0);
+} */
+
+figure.effect-layla p {
+	padding: 0.5em 2em;
+	text-transform: none;
+	opacity: 1;
+	transform: translate3d(0, -10px, 0);
+	color: #fff;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: -50px;
+  font-family: "Poppins", sans-serif;
 }
 
 .grid figure p {
   letter-spacing: 1px;
   font-size: 68.5%;
+  font-family: "Poppins", sans-serif;
 }
 .grid figure figcaption > a {
   z-index: 1;
@@ -1066,6 +1086,7 @@ figure.effect-layla p {
   white-space: nowrap;
   font-size: 0;
   opacity: 0;
+  font-family: "Poppins", sans-serif;
 }
 figure.effect-layla figcaption::after {
   top: 30px;
@@ -1076,7 +1097,7 @@ figure.effect-layla figcaption::after {
   border-left: 1px solid #fff;
   -webkit-transform: scale(1, 0);
   -ms-transform: scale(1, 0);
-  transform: scale(1, 0);
+  transform: scale(1, 1);
   -webkit-transform-origin: 100% 0;
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
@@ -1089,6 +1110,7 @@ figure.effect-layla:hover img {
   -webkit-transition-delay: 0.15s;
   -o-transition-delay: 0.15s;
   transition-delay: 0.15s;
+  font-family: "Poppins", sans-serif;
 }
 
 figure.effect-layla:hover img {
@@ -1102,7 +1124,7 @@ figure.effect-layla:hover figcaption {
 
 figure.effect-layla:hover figcaption::before,
 figure.effect-layla:hover figcaption::after {
-  opacity: 1;
+  opacity: 0;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -1114,6 +1136,7 @@ figure.effect-layla:hover h3 {
   -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
   padding: 0px 0px;
+  font-family: "Poppins", sans-serif;
 }
 
 figure.effect-layla:hover h6.find-more {
@@ -1136,6 +1159,7 @@ figure.effect-layla:hover p {
   width: 80%;
   margin: 0 auto;
   color: #fff;
+  
 }
 
 .row {
@@ -1527,6 +1551,7 @@ section article {
   padding-right: 15px;
   padding-left: 5px;
   padding-bottom: 6px;
+  flex: 0 0 20%;
 }
 ul.footer-links li a::before {
   content: "";
@@ -1534,7 +1559,7 @@ ul.footer-links li a::before {
   width: 100%;
   height: 1px;
   background: #fff;
-  bottom: 0%;
+  bottom: 2px;
   -webkit-animation: out 0.4s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
   animation: out 0.4s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 }
@@ -1546,6 +1571,7 @@ ul.footer-links li::after {
   width: 1px;
   height: 15px;
   background: #fff;
+  display: none;
 }
 
 ul.footer-links li a:hover:before {
@@ -1582,7 +1608,7 @@ p.site ul.footer-links li a:before {
   100% {
       left: 0;
       right: auto;
-      width: 100%;
+      width: 50%;
   }
 }
 
@@ -1595,7 +1621,7 @@ p.site ul.footer-links li a:before {
   100% {
       left: 0;
       right: auto;
-      width: 100%;
+      width: 50%;
   }
 }
 @-webkit-keyframes out {
@@ -1649,10 +1675,10 @@ p.site ul.footer-links li a:before {
 /*Link Hover Ends*/
 
 .footer-area-top {
-  background: var(--main-color);
+  background: #696666;
   padding: 5px 0px;
   overflow: hidden;
-  box-shadow: 0px 0px 15px rgba(255,255,255,0.5);
+  /* box-shadow: 0px 0px 15px rgba(255,255,255,0.5); */
   position: relative;
   z-index: 2;
 }
@@ -1687,6 +1713,8 @@ p.site ul.footer-links li a:before {
 }
 .footer-links {
   text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /**************************************/
@@ -3604,4 +3632,49 @@ textarea:focus{
 
 .banner-area {
   position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.room-parent {
+	padding-top: 50px;
+	display: grid;
+	grid-template-columns: 3fr 6fr 3fr;
+}
+
+.single-room {
+	position: relative;
+}
+.room-overly {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.single-room > img {
+	height: 390px;
+	object-fit: cover;
+}
+.room-overly h2,
+.room-overly p,
+.room-overly a
+ {
+	color: #fff;
 }
