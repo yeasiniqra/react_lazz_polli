@@ -105,7 +105,7 @@ const HeaderNav = () => {
                                         </li>
                                         <li>
                                             <NavLink
-                                                to="/room"
+                                                to="/suits"
                                                 onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >
@@ -244,7 +244,7 @@ const HeaderNav = () => {
                                         </li>
                                         <li>
                                             <NavLink
-                                                to="/room"
+                                                to="/suits"
                                                 onClick={toggleClass}
                                                 className={({ isActive }) => (isActive ? "link-active" : "link")}
                                             >

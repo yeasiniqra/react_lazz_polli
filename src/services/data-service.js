@@ -156,43 +156,53 @@ const APP_DATA = {
 
     ],
 
-    FindHroom:[
+    FindHroom:[ 
         {
             image : findOne,
             topHeading: "Rooms & Suites",
-            topBtn : "Find More",
+            topBtn : "View More",
             btmHeading: "Rooms & Suites",
             description : "Accommodation in the resort consists of 30 superior and premium type rooms in the terraced main hotel.",
-            bottomBtn : "View more",
-            link: '/room'
+            bottomBtn : "View More",
+            link: '/suits'
         },
         {
-            image2 : findTwo,
-            topHeading2: "Dine",
-            topBtn2 : "Find More",
-            btmHeading2 : "Dine",
-            description2 : "Dine at Banana Leaf and Tea Valley restaurant to enjoy delicious food from diverse range of cuisine.",
-            bottomBtn2 : "View more",
-            link2: '/dine'
+            image : findTwo,
+            topHeading: "Dine",
+            topBtn : "View More",
+            btmHeading : "Dine",
+            description : "Dine at Banana Leaf and Tea Valley restaurant to enjoy delicious food from diverse range of cuisine.",
+            bottomBtn : "View More",
+            link: '/dine'
         },
         {
-            image3 : findThree,
-            topHeading3: "Relax",
-            topBtn3 : "Find More",
-            btmHeading3: "Relax",
-            description3 : "Holistic spa indulgence awaits to fulfill your every wish with an all-natural package that includes herbal and floral concoctions.",
-            bottomBtn3 : "View more",
-            link3: '/relax'
+            image : findThree,
+            topHeading: "Relax",
+            topBtn : "View More",
+            btmHeading: "Relax",
+            description : "Holistic spa indulgence awaits to fulfill your every wish with an all-natural package that includes herbal and floral concoctions.",
+            bottomBtn : "View More",
+            link: '/relax'
         },
         {
-            image4 : findFour,
-            topHeading4 : "Enjoy",
-            topBtn4 : "Find More",
-            btmHeading4 : "Enjoy",
-            description4 : "70 feet long first infinity edged swimming pool in the country with sunken pool bar. 50 feet long lap pool on the lower layer.",
-            bottomBtn4 : "View more",
-            link4 : '/enjoy'
+            image : findFour,
+            topHeading : "Enjoy",
+            topBtn : "View More",
+            btmHeading : "Enjoy",
+            description : "70 feet long first infinity edged swimming pool in the country with sunken pool bar. 50 feet long lap pool on the lower layer.",
+            bottomBtn : "View More",
+            link : '/enjoy'
         },
+        {
+            image : findFour,
+            topHeading : "Full Package",
+            topBtn : "View More",
+            btmHeading : "Full Package",
+            description : "70 feet long first infinity edged swimming pool in the country with sunken pool bar. 50 feet long lap pool on the lower layer.",
+            bottomBtn : "View More",
+            link : '/enjoy'
+        },
+
     ],
 
     BestService:[

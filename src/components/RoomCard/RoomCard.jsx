@@ -10,9 +10,9 @@ const RoomCard = ({room}) => {
         <div className="room-content-x">
             <Link to={`${room.id}`}>{room.roomTitle}</Link>
             <h3>
-              {room.roomAmount}&nbsp;<span>/ {room.dayNight}</span>{" "}
+              {room.roomAmount}&nbsp;<span>/ <sup>{room.dayNight}</sup></span>{" "}
             </h3>
-            <div className="common-btn">
+            <div className="common-btn common-flex">
               <Link to={`${room.id}`}>{room.btnText}</Link>
             </div>
         </div>

@@ -17,6 +17,8 @@ import Gallery from './pages/Gallery';
 import RoomSearch from './pages/RoomSearch';
 import CheckoutElement from './components/CheckoutElement/CheckoutElement';
 import ErrorPage from './pages/ErrorPage';
+import SuitsRoom from './pages/SuitsRoom';
+// import { HideInspect } from './lib/Hide';
 
 function App() {
   const location = useLocation();
@@ -24,6 +26,10 @@ function App() {
   useEffect(()=>{
     weatherInit(document, "script", "weatherwidget-io-js");
   }, []);
+
+  // useEffect(() => {
+  //   HideInspect() 
+  // },[])
 
   
   useEffect(() => {
@@ -47,6 +53,7 @@ function App() {
             <Route path="/gallery" element={ <Gallery />} />
             <Route path="/searchroom" element={ <RoomSearch />} />
             <Route path="/checkout" element={ <CheckoutElement />} />
+            <Route path="/suits" element={ <SuitsRoom />} />
             <Route path="/*" element={<ErrorPage />} />
         </Routes>
       <Footer /> 
