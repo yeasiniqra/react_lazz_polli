@@ -85,7 +85,6 @@ const FindHroomTemplate = ({FindHroom}) => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
